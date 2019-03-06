@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="50dp"
+        android:transitionName="share"
+>
+
+    <TextView android:layout_width="match_parent"
+              android:layout_height="80dp"
+              android:text="开始"
+              android:textSize="30sp"
+              android:textColor="@android:color/black"
+              android:gravity="center"
+              android:background="@drawable/round_btn"
+              android:layout_marginBottom="50dp"
+              android:clickable="true"
+              android:onClick="onClick"
+              android:id="@+id/btn_start"
+    />
+
+
+    <TextView android:layout_width="match_parent"
+              android:layout_height="80dp"
+              android:textSize="24sp"
+              android:textColor="@android:color/holo_blue_light"
+              android:gravity="center"
+
+              android:id="@+id/text_cn"
+    />
+    <TextView android:layout_width="match_parent"
+              android:layout_height="80dp"
+              android:textSize="24sp"
+              android:textColor="@android:color/holo_blue_dark"
+              android:gravity="center"
+              android:id="@+id/text_en"
+    />
+
+</LinearLayout>

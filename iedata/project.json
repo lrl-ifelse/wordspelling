@@ -1,0 +1,100 @@
+{
+	"editors":[
+		{
+			"descript":"event editor",
+			"fields":[
+				{
+					"args":"auto",
+					"descript":"key",
+					"name":"id",
+					"visible":false
+				},
+				{
+					"descript":"event name",
+					"name":"name",
+					"visible":true
+				},
+				{
+					"descript":"descript event",
+					"name":"descript",
+					"visible":true
+				}
+			],
+			"name":"Event",
+			"type":"TABLE"
+		},
+		{
+			"descript":"url editor",
+			"fields":[
+				{
+					"args":"auto",
+					"descript":"key",
+					"name":"id",
+					"visible":false
+				},
+				{
+					"descript":"url name",
+					"name":"name",
+					"visible":true
+				},
+				{
+					"descript":"url",
+					"name":"url",
+					"visible":true
+				},
+				{
+					"descript":"confluence",
+					"name":"confluence",
+					"visible":true
+				},
+				{
+					"descript":"descript url",
+					"name":"descript",
+					"visible":true
+				}
+			],
+			"name":"Urls",
+			"type":"TABLE"
+		},
+		{
+			"defPoint":"900101",
+			"descript":"forms manager",
+			"name":"Forms",
+			"type":"FLOW"
+		},
+		{
+			"defPoint":"900102",
+			"descript":"flows manager",
+			"name":"Flows",
+			"type":"FLOW"
+		}
+	],
+	"fieldTypes":[
+		{
+			"name":"auto",
+			"value":"<%R.getSequence()%>"
+		},
+		{
+			"name":"boolean",
+			"value":"true,false"
+		},
+		{
+			"name":"Event",
+			"path":"/iedata/Event.ie",
+			"value":"id|name"
+		},
+		{
+			"name":"Editor",
+			"value":"TABLE,FLOW"
+		},
+		{
+			"name":"Direction",
+			"value":"horizontal,vertical"
+		},
+		{
+			"name":"Template",
+			"value":"FormBase,FormList"
+		}
+	],
+	"sequence":139
+}

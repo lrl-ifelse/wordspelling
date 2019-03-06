@@ -1,0 +1,443 @@
+[
+	{
+		"id":"1001",
+		"name":"基础",
+		"points":[
+			{
+				"classz":"org.ifelse.points.Start",
+				"icon":"/iedata/icons/start.png",
+				"id":"100101",
+				"name":"Start",
+				"doubleclick": "R.open_point",
+				"mproperties":[
+					{
+						"args":"Event",
+						"key":"event",
+						"name":"Event",
+						"visible":true
+					},
+					{
+						"key":"value",
+						"name":"Value",
+						"visible":true
+					},
+					{
+						"key":"descript",
+						"name":"descript",
+						"value":"起始点",
+						"visible":true
+					}
+				]
+			},
+			{
+				"classz":"org.ifelse.points.PointNone",
+				"icon":"/iedata/icons/011.png",
+				"id":"100102",
+				"name":"注释",
+				"doubleclick": "R.open_point",
+				"mproperties":[
+
+					{
+						"key":"descript",
+						"name":"descript",
+						"value":"描述",
+						"visible":true
+					}
+				]
+			},{
+				"classz":"org.ifelse.points.EventSend",
+				"icon":"/iedata/icons/end.png",
+				"id":"100103",
+				"name":"发送事件",
+				"doubleclick": "R.open_point",
+				"mproperties":[
+					{
+						"args":"Event",
+						"key":"event",
+						"name":"Event",
+						"visible":true
+					},{
+						"key":"params",
+						"name":"params",
+						"visible":true
+					},{
+						"key":"delay",
+						"name":"delay",
+						"visible":true
+					},
+					{
+						"key":"descript",
+						"name":"descript",
+						"value":"发送事件",
+						"visible":true
+					}
+				]
+			}
+		]
+	},
+	{
+		"id": "4001",
+		"name": "字符",
+		"points": [
+
+
+			{
+				"classz": "org.ifelse.points.StringUtil",
+				"icon": "/iedata/icons/101.png",
+				"id": "400101",
+				"name": "字符处理",
+				"doubleclick": "R.open_point",
+				"mproperties": [
+
+					{
+						"key":"condition",
+						"name":"condition"
+					},
+					{
+						"key":"isnumber",
+						"name":"isnumber",
+						"args": "boolean"
+					},{
+						"key":"descript",
+						"name":"descript",
+						"value": "字符处理"
+					}
+				]
+			}
+		]
+	},
+	{
+		"id": "5001",
+		"name": "对象处理",
+		"points": [
+
+			{
+				"classz": "org.ifelse.points.ObjectRead",
+				"icon": "/iedata/icons/arrayobj.png",
+				"id": "500101",
+				"name": "对象取值",
+				"doubleclick": "R.open_point",
+				"mproperties": [
+
+					{
+						"key":"data",
+						"name":"data"
+					},
+					{
+						"key":"field",
+						"name":"field"
+					},{
+						"key":"value",
+						"name":"value"
+					},{
+						"key":"descript",
+						"name":"descript",
+						"value": "对象取值"
+					}
+				]
+			},
+			{
+				"classz": "org.ifelse.points.ObjectSet",
+				"icon": "/iedata/icons/strsplite.png",
+				"id": "500102",
+				"name": "对象赋值",
+				"doubleclick": "R.open_point",
+				"mproperties": [
+
+					{
+						"key":"data",
+						"name":"data"
+					},
+					{
+						"key":"field",
+						"name":"field"
+					},{
+						"key":"value",
+						"name":"value"
+					},{
+						"key":"descript",
+						"name":"descript",
+						"value": "对象赋值"
+					}
+				]
+			}
+		]
+	},
+	{
+		"id": "6001",
+		"name": "存储",
+		"points": [
+			{
+				"classz": "org.ifelse.points.UserData",
+				"icon": "/iedata/icons/111.png",
+				"id": "600101",
+				"name": "本地数据",
+				"doubleclick": "R.open_point",
+				"mproperties": [
+
+					{
+						"key":"key",
+						"name":"key"
+					},
+					{
+						"key":"value",
+						"name":"value"
+					},{
+						"key":"def",
+						"name":"def"
+					},{
+						"key":"descript",
+						"name":"descript",
+						"value": "本地数据"
+					}
+				]
+			},
+			{
+				"classz": "org.ifelse.points.UserSaveData",
+				"icon": "/iedata/icons/111.png",
+				"id": "600102",
+				"name": "保存数据",
+				"doubleclick": "R.open_point",
+				"mproperties": [
+
+					{
+						"key":"key",
+						"name":"key"
+					},
+					{
+						"key":"value",
+						"name":"value"
+					},{
+						"key":"descript",
+						"name":"descript",
+						"value": "保存数据"
+					}
+				]
+			}
+
+		]
+	},
+	{
+		"id":"7001",
+		"name":"Android",
+		"points":[
+			{
+				"classz":"org.ifelse.points.PermUtil",
+				"icon":"/iedata/icons/029.png",
+				"id":"700101",
+				"name":"权限判断",
+				"doubleclick": "R.open_point",
+				"mproperties":[
+					{
+						"key":"permissioin",
+						"name":"permissioin",
+						"visible":true
+					},
+					{
+						"key":"result",
+						"name":"result"
+					},
+					{
+						"key":"descript",
+						"name":"descript",
+						"value":"权限判断"
+					}
+				]
+			},
+			{
+				"classz":"org.ifelse.points.PermAlert",
+				"icon":"/iedata/icons/029.png",
+				"id":"700102",
+				"name":"权限请求",
+				"doubleclick": "R.open_point",
+				"mproperties":[
+					{
+						"key":"permissioin",
+						"name":"permissioin",
+						"visible":true
+					},
+
+					{
+						"key":"descript",
+						"name":"descript",
+						"value":"权限请求"
+					}
+				]
+			}
+		]
+	},
+	{
+		"id":"8001",
+		"name":"业务",
+		"points":[
+			{
+				"classz":"org.ifelse.points.TTSInit",
+				"icon":"/iedata/icons/024.png",
+				"id":"800100",
+				"name":"百度语音初始化",
+				"doubleclick": "R.open_point",
+				"mproperties":[
+					{
+						"key":"result",
+						"name":"result",
+						"value":"$init_result"
+					},
+					{
+						"key":"descript",
+						"name":"descript",
+						"value":"百度语音初始化"
+					}
+
+				]
+			},
+			{
+				"classz":"org.ifelse.points.TTS",
+				"icon":"/iedata/icons/icon_speak.png",
+				"id":"800101",
+				"name":"朗读",
+				"doubleclick": "R.open_point",
+				"mproperties":[
+					{
+						"args":"",
+						"key":"txt",
+						"name":"txt",
+						"visible":true
+					},
+					{
+						"key":"descript",
+						"name":"descript",
+						"value":"朗读"
+					}
+				]
+			},{
+				"classz":"org.ifelse.points.Asr",
+				"icon":"/iedata/icons/icon_listen.png",
+				"id":"800104",
+				"name":"语音识别",
+				"doubleclick": "R.open_point",
+				"mproperties":[
+					{
+						"args":"",
+						"key":"result",
+						"name":"result",
+						"visible":true
+					},
+					{
+						"key":"descript",
+						"name":"descript",
+						"value":"语音识别"
+					}
+				]
+			},
+			{
+				"classz":"org.ifelse.points.BWordImport",
+				"icon":"/iedata/icons/sqlobj.png",
+				"id":"800102",
+				"name":"单词导入",
+				"doubleclick": "R.open_point",
+				"mproperties":[
+					{
+						"key":"result",
+						"name":"result",
+						"visible":true
+					},
+					{
+						"key":"descript",
+						"name":"descript",
+						"value":"单词导入"
+					}
+				]
+			},
+			{
+				"classz":"org.ifelse.points.BPoint",
+				"icon":"/iedata/icons/0252.png",
+				"id":"800103",
+				"name":"业务节点",
+				"doubleclick": "R.open_point",
+				"mproperties":[
+					{
+						"key":"method",
+						"name":"method",
+						"visible":true
+					},
+					{
+						"key":"in",
+						"name":"in",
+						"visible":true
+					},
+					{
+						"key":"out",
+						"name":"out",
+						"visible":true
+					},
+					{
+						"key":"descript",
+						"name":"descript",
+						"value":"业务节点"
+					}
+				]
+			}
+		]
+	},
+	{
+		"id":"9001",
+		"name":"管理",
+		"points":[
+			{
+				"icon":"/iedata/icons/form.png",
+				"id":"900101",
+				"name":"Form",
+				"doubleclick": "R.open_form",
+				"mproperties":[
+					{
+						"args":"Event",
+						"key":"event",
+						"name":"event",
+						"visible":true
+					},
+					{
+						"key":"classname",
+						"name":"classname",
+						"value":"Form",
+						"visible":true
+					},
+					{
+						"key":"template",
+						"name":"template",
+						"visible":true,
+						"args":"Template"
+					},
+					{
+						"key":"descript",
+						"name":"descript",
+						"visible":true
+					}
+				]
+			},
+			{
+				"icon":"/iedata/icons/flow.png",
+				"id":"900102",
+				"name":"Flow",
+				"doubleclick": "R.open_flow",
+				"mproperties":[
+					{
+						"args":"Event",
+						"key":"event",
+						"name":"event",
+						"visible":true
+					},
+					{
+						"key":"name",
+						"name":"name",
+						"visible":true
+					},
+					{
+						"key":"descript",
+						"name":"descript",
+						"visible":true
+					}
+				]
+			}
+		]
+	}
+]

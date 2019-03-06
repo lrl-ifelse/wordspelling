@@ -1,0 +1,36 @@
+{
+	"flowid":"98",
+	"items":[
+		{
+			"classname":"org.ifelse.vl.VLPoint",
+			"flow_point_id":"100101",
+			"height":40,
+			"id":"1",
+			"line":false,
+			"mproperties":[
+				{
+					"args":"Event",
+					"key":"event",
+					"name":"event",
+					"value":"97",
+					"visible":true
+				},
+				{
+					"key":"value",
+					"name":"value",
+					"visible":false
+				},
+				{
+					"key":"descript",
+					"name":"descript",
+					"value":"起始点",
+					"visible":false
+				}
+			],
+			"width":40,
+			"x":50,
+			"y":50
+		}
+	],
+	"title":"英译汉"
+}

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="50dp"
+>
+
+    <TextView android:layout_width="match_parent"
+              android:layout_height="80dp"
+              android:text="顺序背单词"
+              android:textSize="30sp"
+              android:textColor="@android:color/black"
+              android:gravity="center"
+              android:background="@drawable/round_btn"
+              android:layout_marginBottom="50dp"
+              android:clickable="true"
+              android:onClick="onClick"
+              android:id="@+id/btn_order"
+    />
+    <TextView android:layout_width="match_parent"
+              android:layout_height="80dp"
+              android:text="单词拼写"
+              android:textSize="30sp"
+              android:textColor="@android:color/black"
+              android:gravity="center"
+              android:background="@drawable/round_btn"
+              android:clickable="true"
+              android:onClick="onClick"
+              android:id="@+id/btn_test"
+    />
+
+</LinearLayout>
