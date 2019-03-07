@@ -13,7 +13,7 @@ public class PointNone extends FlowPoint {
     public void run(FlowBox flowBox) throws Exception {
 
         flowBox.log("%s",getVarString(flowBox,"descript"));
-        flowBox.notifyFlowContinue();
+        flowBox.next();
 
     }
 }

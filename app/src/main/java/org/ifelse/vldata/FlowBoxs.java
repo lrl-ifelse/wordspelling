@@ -1,6 +1,6 @@
 package org.ifelse.vldata;
 
-import org.ifelse.speakword.R;
+import org.ifelse.wordspelling.R;
 import org.ifelse.vl.MFlow;
 
 public class FlowBoxs{

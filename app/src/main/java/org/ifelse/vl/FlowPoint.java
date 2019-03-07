@@ -42,28 +42,17 @@ public abstract class FlowPoint {
 	}
 
 
-	public void setStart(boolean start) {
-		this.start = start;
-	}
-
-	public void setError(boolean err) {
-		this.error = err;
-	}
-
-	boolean start,error;
-
-	public  boolean isStart(){
-		return start;
-	}
-	public  boolean isEnd(){
-
-		return lines_child.size()==0;
-
-	}
-
 	public boolean isError(){
 		return false;
 	}
+	public  boolean isStart(){
+		return false;
+	}
+	public  boolean isEnd(){
+		return lines_child.size()==0;
+	}
+
+
 
 	public String getDescript(){
 

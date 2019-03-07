@@ -147,7 +147,7 @@ public class StringUtil extends FlowPoint {
         }
 
 
-        flowBox.notifyFlowContinue();
+        flowBox.next();
 
 
 

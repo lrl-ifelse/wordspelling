@@ -59,7 +59,7 @@ public class BWordImport extends FlowPoint {
         finally {
             SQLO.commitTransaction();
         }
-        flowBox.notifyFlowContinue();
+        flowBox.next();
 
 
     }

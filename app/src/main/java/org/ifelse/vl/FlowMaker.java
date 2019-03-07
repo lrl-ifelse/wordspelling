@@ -91,8 +91,15 @@ public class FlowMaker {
 
                     }
                     box.addPoint(point);
-                    if (point.isStart())
+                    if (point.isStart()) {
+
+                        if( box.getRoot() != null){
+
+                            throw new RuntimeException(box.getTitle() + " 解析异常：流程中只能有一个起点。");
+                        }
                         box.setRoot(point);
+
+                    }
 
 
                 } else {

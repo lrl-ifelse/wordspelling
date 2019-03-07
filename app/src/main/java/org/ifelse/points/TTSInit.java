@@ -1,6 +1,6 @@
 package org.ifelse.points;
 
-import org.ifelse.speakword.JKApp;
+import org.ifelse.wordspelling.JKApp;
 import org.ifelse.vl.FlowBox;
 import org.ifelse.vl.FlowPoint;
 
@@ -14,7 +14,7 @@ public class TTSInit extends FlowPoint {
 
         flowBox.setValue(params.get("result"),result);
 
-        flowBox.notifyFlowContinue();
+        flowBox.next();
 
     }
 }

@@ -46,7 +46,7 @@ public class PermAlert extends FlowPoint {
             public void onPermission(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
 
 
-                flowBox.notifyFlowContinue();
+                flowBox.next();
 
             }
         });
@@ -104,6 +104,6 @@ public class PermAlert extends FlowPoint {
 
 
 
-        //flowBox.notifyFlowContinue();
+        //flowBox.next();
     }
 }

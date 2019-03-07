@@ -7,10 +7,9 @@ import android.view.View;
 import android.widget.TextView;
 import org.ifelse.models.MCode;
 import org.ifelse.models.MWord;
-import org.ifelse.speakword.R;
+import org.ifelse.wordspelling.R;
 import org.ifelse.vl.Bind;
 import org.ifelse.vl.Form;
-import org.ifelse.vl.VL;
 import org.ifelse.vldata.Event;
 
 /*
@@ -80,7 +79,7 @@ public class FormCnToEn extends Form{
                 setTitle("单词拼写");
                 break;
             case FS_PAUSE:
-                canel(Event.B_WORD_TEST_CN_TO_EN);
+                cancel(Event.B_WORD_TEST_CN_TO_EN);
                 break;
         }
     }

@@ -50,7 +50,7 @@ public class EventSend  extends FlowPoint {
 
 
 
-		flowBox.notifyFlowContinue();
+		flowBox.next();
 
 	}
 

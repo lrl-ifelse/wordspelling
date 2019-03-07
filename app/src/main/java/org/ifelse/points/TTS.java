@@ -2,7 +2,7 @@ package org.ifelse.points;
 
 import com.baidu.tts.client.SpeechError;
 import com.baidu.tts.client.SpeechSynthesizerListener;
-import org.ifelse.speakword.JKApp;
+import org.ifelse.wordspelling.JKApp;
 import org.ifelse.vl.FlowBox;
 import org.ifelse.vl.FlowPoint;
 
@@ -12,9 +12,10 @@ public class TTS extends FlowPoint {
 
 
 
-       String txt = flowBox.getVarString( params.get("txt") );
+       String txt = getVarString(flowBox,"txt" );
 
 
+       flowBox.log("TTS:%s",txt);
 
         JKApp.instance.mSpeechSynthesizer.setSpeechSynthesizerListener(new SpeechSynthesizerListener() {
             @Override
@@ -49,14 +50,14 @@ public class TTS extends FlowPoint {
             public void onSpeechFinish(String s) {
 
                 flowBox.log("tts onSpeechFinish:%s",s );
-                flowBox.notifyFlowContinue();
+                flowBox.next();
 
             }
 
             @Override
             public void onError(String s, SpeechError speechError) {
                 flowBox.log("tts onError:%s   speechError:%s",s,speechError);
-                flowBox.notifyFlowContinue();
+                flowBox.next();
             }
         });
         JKApp.instance.mSpeechSynthesizer.speak(txt);

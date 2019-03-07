@@ -10,6 +10,6 @@ public class SqlQuery extends FlowPoint {
 
 
 
-        flowBox.notifyFlowContinue();
+        flowBox.next();
     }
 }

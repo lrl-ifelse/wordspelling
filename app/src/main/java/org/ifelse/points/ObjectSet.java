@@ -20,7 +20,7 @@ public class ObjectSet extends FlowPoint {
     @Override
     public void run(FlowBox flowBox) throws Exception {
 
-        Object obj = flowBox.getValue(params.get(key_data));
+        Object obj = flowBox.getValue(getVarName(key_data));
 
 
 
@@ -34,31 +34,31 @@ public class ObjectSet extends FlowPoint {
 
                 if (f == null) {
 
-                    f = o.getClass().getDeclaredField(params.get(key_field));
+                    f = o.getClass().getDeclaredField(getVarName(key_field));
                     f.setAccessible(true);
 
                 }
-                setValue(o,f, flowBox.getValue(params.get(key_value))  );
+                setValue(o,f, flowBox.getValue(getVarName(key_value))  );
 
             }
 
         }
         else{
 
-            String[] fields = params.get(key_field).split(",");
-            String[] values = params.get(key_value).split(",");
+            String[] fields = getVarName(key_field).split(",");
+            String[] values = getVarName(key_value).split(",");
 
             for(int i=0;i<fields.length;i++) {
 
                 f = obj.getClass().getDeclaredField(fields[i]);
                 f.setAccessible(true);
-                setValue(obj, f, flowBox.getValue( values[i] ) );
+                setValue(obj, f, getVarValue(flowBox, values[i] ) );
 
             }
         }
 
 
-        flowBox.notifyFlowContinue();
+        flowBox.next();
     }
 
     void setValue(Object obj, Field f, Object value) throws IllegalAccessException {

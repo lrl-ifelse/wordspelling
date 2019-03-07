@@ -10,8 +10,8 @@ import android.support.v4.app.ActivityCompat;
 import android.support.v4.app.ActivityOptionsCompat;
 import android.support.v4.util.Pair;
 import android.view.View;
-import org.ifelse.speakword.JKApp;
-import org.ifelse.speakword.R;
+import org.ifelse.wordspelling.JKApp;
+import org.ifelse.wordspelling.R;
 import org.ifelse.vldata.Event;
 
 import java.lang.ref.WeakReference;

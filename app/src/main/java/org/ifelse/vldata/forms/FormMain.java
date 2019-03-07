@@ -5,7 +5,7 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import org.ifelse.models.MCode;
-import org.ifelse.speakword.R;
+import org.ifelse.wordspelling.R;
 import org.ifelse.vl.Form;
 import org.ifelse.vl.MFormParams;
 import org.ifelse.vldata.Event;

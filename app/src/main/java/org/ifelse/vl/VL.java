@@ -3,7 +3,7 @@ package org.ifelse.vl;
 import android.app.Application;
 import android.os.Handler;
 import android.os.Looper;
-import org.ifelse.speakword.JKApp;
+import org.ifelse.wordspelling.JKApp;
 import org.ifelse.vldata.Event;
 import org.ifelse.vldata.FlowBoxs;
 
@@ -34,14 +34,7 @@ public class VL {
         }
         if( !_instance._adapter.onEvent(event,value) ){//业务拦截
 
-
-
             final Class formClass = _instance._adapter.getForm(event);
-
-
-
-
-
 
             if( formClass != null && formClass.getGenericSuperclass().equals(Form.class)){//该事件为 页面事件
 
@@ -66,8 +59,6 @@ public class VL {
                 return;
 
             }
-
-
 
             int flow = _instance._adapter.getFlow(event);
             if( flow != 0 ){
@@ -126,41 +117,6 @@ public class VL {
 
         FlowBox.addCancelEvent(e);
     }
-
-    public void clearFormTo(MFormNav formNav) {
-
-
-        Class form_to = _adapter.getForm(formNav.form_clear_to);
-
-        for(int i=_form_manager._forms.size()-1;i>-1;i--){
-
-
-            Form form = _form_manager._forms.getByIndex(i).get();
-            if( form != null ){
-
-                log("clearFormTo %s -->",form);
-                if(  !form.getClass().equals(form_to)  ){
-
-                    log("clearFormTo  --Xfinish");
-                    form.finish();
-                    _form_manager._forms.remove(i);
-
-                }
-                else{
-                    log("clearFormTo  --to push to%s",( formNav.form_push==null?formNav.form_clear_to:formNav.form_push));
-                    send(( formNav.form_push==null?formNav.form_clear_to:formNav.form_push),formNav.value);
-                    break;
-                }
-
-
-
-            }
-
-
-        }
-    }
-
-
 
     public interface VLAdapter{
 

@@ -1,6 +1,5 @@
-package org.ifelse.speakword;
+package org.ifelse.wordspelling;
 
-import org.ifelse.vl.VL;
 import org.ifelse.vldata.Event;
 
 public class EventFilter {

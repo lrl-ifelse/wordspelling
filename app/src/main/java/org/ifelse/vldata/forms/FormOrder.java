@@ -7,7 +7,7 @@ import android.view.View;
 import android.widget.TextView;
 import org.ifelse.models.MCode;
 import org.ifelse.models.MWord;
-import org.ifelse.speakword.R;
+import org.ifelse.wordspelling.R;
 import org.ifelse.vl.Bind;
 import org.ifelse.vl.Form;
 import org.ifelse.vl.VL;
@@ -103,6 +103,12 @@ public class FormOrder extends Form{
 
                 setContentView(R.layout.formorder);
                 setTitle("顺序背单词");
+
+                break;
+            case FS_DESTORY:
+
+
+                cancel(Event.B_WORD_ORDER);
 
                 break;
 

@@ -35,6 +35,6 @@ public class UserSaveData extends FlowPoint {
            editor.putString( keys[i], flowBox.getVarString(  values[i] ) );
         }
         editor.commit();
-        flowBox.notifyFlowContinue();
+        flowBox.next();
     }
 }

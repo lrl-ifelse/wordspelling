@@ -4,7 +4,7 @@ import com.alibaba.fastjson.JSON;
 import com.baidu.speech.EventListener;
 import com.baidu.speech.asr.SpeechConstant;
 import org.ifelse.models.MAsr;
-import org.ifelse.speakword.JKApp;
+import org.ifelse.wordspelling.JKApp;
 import org.ifelse.vl.FlowBox;
 import org.ifelse.vl.FlowPoint;
 import org.ifelse.vl.NLog;
@@ -74,7 +74,7 @@ public class Asr extends FlowPoint {
 
 
 
-                                flowBox.notifyFlowContinue();
+                                flowBox.next();
                             }
                                 break;
 

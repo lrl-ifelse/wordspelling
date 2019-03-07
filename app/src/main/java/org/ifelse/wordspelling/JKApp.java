@@ -1,6 +1,5 @@
-package org.ifelse.speakword;
+package org.ifelse.wordspelling;
 
-import android.content.Context;
 import android.media.AudioManager;
 import android.os.Handler;
 import android.os.Looper;

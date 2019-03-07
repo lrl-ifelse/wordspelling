@@ -58,7 +58,7 @@ import org.ifelse.vl.FlowPoint;
 
         }
 
-        flowBox.notifyFlowContinue();
+        flowBox.next();
     }
 
     public static SharedPreferences getPreference(Context context){

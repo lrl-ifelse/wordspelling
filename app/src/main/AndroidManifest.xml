@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-          xmlns:tools="http://schemas.android.com/tools" package="org.ifelse.speakword">
+          xmlns:tools="http://schemas.android.com/tools" package="org.ifelse.wordspelling">
 
 
     <uses-permission android:name="android.permission.INTERNET"/>
@@ -15,7 +15,7 @@
 
 
     <application
-            android:name=".JKApp"
+            android:name="org.ifelse.wordspelling.JKApp"
             android:allowBackup="true"
             android:icon="@mipmap/logo"
             android:label="@string/app_name"

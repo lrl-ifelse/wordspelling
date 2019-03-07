@@ -1,7 +1,7 @@
 package org.ifelse.vl;
 
 import android.util.Log;
-import org.ifelse.speakword.BuildConfig;
+import org.ifelse.wordspelling.BuildConfig;
 
 
 public class NLog {

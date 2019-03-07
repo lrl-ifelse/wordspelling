@@ -32,6 +32,6 @@ public class PermUtil extends FlowPoint {
 
         flowBox.setValue(params.get(key_result),result);
 
-        flowBox.notifyFlowContinue();
+        flowBox.next();
     }
 }

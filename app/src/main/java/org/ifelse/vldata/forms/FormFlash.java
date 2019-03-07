@@ -1,6 +1,6 @@
 package org.ifelse.vldata.forms;
 
-import org.ifelse.speakword.R;
+import org.ifelse.wordspelling.R;
 import org.ifelse.vl.Form;
 import org.ifelse.vldata.Event;
 

@@ -50,7 +50,7 @@ public class BPoint extends FlowPoint {
 
         setValue(flowBox,key_out,stringBuffer.toString());
 
-        flowBox.notifyFlowContinue();
+        flowBox.next();
     }
 
 
@@ -68,7 +68,7 @@ public class BPoint extends FlowPoint {
         } catch (Exception e) {
             e.printStackTrace();
         }
-        flowBox.notifyFlowContinue();
+        flowBox.next();
 
 
     }

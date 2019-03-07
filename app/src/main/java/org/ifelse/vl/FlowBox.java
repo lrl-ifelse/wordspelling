@@ -82,13 +82,6 @@ public class FlowBox {
         debug = f;
     }
 
-
-    public void run() {
-
-        run(null);
-
-    }
-
     public Object getFlowParam() {
 
 
@@ -110,12 +103,13 @@ public class FlowBox {
             public void run() {
 
                 try {
-                    if( !NLog.release )
-                        log("point(%s)[%d] %s :%s",point_current.getId(), flow_index++,point_current.getDescript(), point_current.getClass().getSimpleName());
+
+                    if( !NLog.release ) log("point(%s)[%d] %s :%s",point_current.getId(), flow_index++,point_current.getDescript(), point_current.getClass().getSimpleName());
+
                     point_current.run(FlowBox.this);
+
                 } catch (Exception e) {
-                    //e.printStackTrace();
-                   NLog.e(e);
+                    NLog.e(e);
                     error(e);
 
                 }
@@ -128,7 +122,7 @@ public class FlowBox {
 
     int flow_index;
 
-    public void notifyFlowContinue()  {
+    public void next()  {
 
 
 
@@ -140,9 +134,6 @@ public class FlowBox {
         } else {
 
             point_current = point_current.getChild(FlowBox.this);
-
-
-
             if (point_current == null)
                 onFinish();
             else {

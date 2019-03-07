@@ -6,6 +6,7 @@
 			"flow_point_id":"700101",
 			"height":40,
 			"id":"11",
+			"is_run_point":false,
 			"line":false,
 			"mproperties":[
 				{
@@ -36,6 +37,7 @@
 			"flow_point_id":"800101",
 			"height":40,
 			"id":"34",
+			"is_run_point":false,
 			"line":false,
 			"mproperties":[
 				{
@@ -61,6 +63,7 @@
 			"flow_point_id":"100103",
 			"height":40,
 			"id":"45",
+			"is_run_point":false,
 			"line":false,
 			"mproperties":[
 				{
@@ -96,6 +99,7 @@
 			"flow_point_id":"700102",
 			"height":40,
 			"id":"14",
+			"is_run_point":false,
 			"line":false,
 			"mproperties":[
 				{
@@ -120,6 +124,7 @@
 			"flow_point_id":"100101",
 			"height":40,
 			"id":"5",
+			"is_run_point":false,
 			"line":false,
 			"mproperties":[
 				{
@@ -150,6 +155,7 @@
 			"flow_point_id":"100102",
 			"height":40,
 			"id":"16",
+			"is_run_point":false,
 			"line":false,
 			"mproperties":[
 				{
@@ -168,6 +174,7 @@
 			"flow_point_id":"800100",
 			"height":40,
 			"id":"27",
+			"is_run_point":false,
 			"line":false,
 			"mproperties":[
 				{
@@ -192,6 +199,7 @@
 			"flow_point_id":"600101",
 			"height":40,
 			"id":"38",
+			"is_run_point":false,
 			"line":false,
 			"mproperties":[
 				{
@@ -228,6 +236,7 @@
 			"flow_point_id":"100102",
 			"height":40,
 			"id":"28",
+			"is_run_point":false,
 			"line":false,
 			"mproperties":[
 				{
@@ -246,6 +255,7 @@
 			"flow_point_id":"600102",
 			"height":40,
 			"id":"39",
+			"is_run_point":false,
 			"line":false,
 			"mproperties":[
 				{
@@ -276,6 +286,7 @@
 			"flow_point_id":"800101",
 			"height":40,
 			"id":"8",
+			"is_run_point":false,
 			"line":false,
 			"mproperties":[
 				{
@@ -301,6 +312,7 @@
 			"flow_point_id":"800102",
 			"height":40,
 			"id":"32",
+			"is_run_point":false,
 			"line":false,
 			"mproperties":[
 				{
@@ -327,6 +339,7 @@
 			"id":"130",
 			"id_from":"8",
 			"id_to":"38",
+			"is_run_point":false,
 			"line":true,
 			"mproperties":[
 				{
@@ -359,6 +372,7 @@
 			"id":"131",
 			"id_from":"38",
 			"id_to":"32",
+			"is_run_point":false,
 			"line":true,
 			"mproperties":[
 				{
@@ -392,6 +406,7 @@
 			"id":"132",
 			"id_from":"27",
 			"id_to":"28",
+			"is_run_point":false,
 			"line":true,
 			"mproperties":[
 				{
@@ -425,6 +440,7 @@
 			"id":"122",
 			"id_from":"5",
 			"id_to":"11",
+			"is_run_point":false,
 			"line":true,
 			"mproperties":[
 				{
@@ -457,11 +473,13 @@
 			"id":"123",
 			"id_from":"11",
 			"id_to":"14",
+			"is_run_point":false,
 			"line":true,
 			"mproperties":[
 				{
 					"key":"descript",
 					"name":"descript",
+					"value":"$storage",
 					"visible":true
 				},
 				{
@@ -489,6 +507,7 @@
 			"id":"134",
 			"id_from":"32",
 			"id_to":"39",
+			"is_run_point":false,
 			"line":true,
 			"mproperties":[
 				{
@@ -522,6 +541,7 @@
 			"id":"124",
 			"id_from":"14",
 			"id_to":"16",
+			"is_run_point":false,
 			"line":true,
 			"mproperties":[
 				{
@@ -554,6 +574,7 @@
 			"id":"135",
 			"id_from":"32",
 			"id_to":"28",
+			"is_run_point":false,
 			"line":true,
 			"mproperties":[
 				{
@@ -587,6 +608,7 @@
 			"id":"125",
 			"id_from":"16",
 			"id_to":"11",
+			"is_run_point":false,
 			"line":true,
 			"mproperties":[
 				{
@@ -619,6 +641,7 @@
 			"id":"136",
 			"id_from":"38",
 			"id_to":"34",
+			"is_run_point":false,
 			"line":true,
 			"mproperties":[
 				{
@@ -652,11 +675,13 @@
 			"id":"126",
 			"id_from":"11",
 			"id_to":"27",
+			"is_run_point":false,
 			"line":true,
 			"mproperties":[
 				{
 					"key":"descript",
 					"name":"descript",
+					"value":"else",
 					"visible":true
 				},
 				{
@@ -684,6 +709,7 @@
 			"id":"137",
 			"id_from":"39",
 			"id_to":"34",
+			"is_run_point":false,
 			"line":true,
 			"mproperties":[
 				{
@@ -716,6 +742,7 @@
 			"id":"138",
 			"id_from":"34",
 			"id_to":"45",
+			"is_run_point":false,
 			"line":true,
 			"mproperties":[
 				{
@@ -748,6 +775,7 @@
 			"id":"129",
 			"id_from":"27",
 			"id_to":"8",
+			"is_run_point":false,
 			"line":true,
 			"mproperties":[
 				{

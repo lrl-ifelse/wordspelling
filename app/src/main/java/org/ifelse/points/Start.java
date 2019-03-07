@@ -24,7 +24,7 @@ public class Start extends FlowPoint {
             flowBox.setValue(paramstr, flowBox.getFlowParam());
         }
 
-        flowBox.notifyFlowContinue();
+        flowBox.next();
 
     }
 

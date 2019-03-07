@@ -29,11 +29,12 @@ public class ObjectRead extends FlowPoint {
                 Field ff = classz.getDeclaredField(fields[i]);
                 ff.setAccessible(true);
                 Object vobj = ff.get(obj);
-                setValue(flowBox,values[i],vobj);
+
+                flowBox.setValue(values[i],vobj);
 
             }
         }
 
-        flowBox.notifyFlowContinue();
+        flowBox.next();
     }
 }

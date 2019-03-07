@@ -139,5 +139,59 @@ class R {
     }
 
 
+    List<MVar> getVars(){
+
+        String path = project.getBasePath()+"/iedata/Flows.ie";
+        List<VLItem> list = TemplateUtil.parseFlow(path);
+
+        List<MVar> static_vars = new ArrayList();
+
+
+        for(VLItem item : list) {
+
+            if (item instanceof VLPoint) {
+
+                VLPoint vp = (VLPoint) item;
+
+                if (vp.flow_point_id.equals("900102")) {
+
+                    String from = project.getBasePath()+"/iedata/flows/"+vp.getMProperty("name").value+'.ie';
+
+                    List<VLItem> items = TemplateUtil.parseFlow(from);
+                    for(VLItem p_item : items ){
+
+                        List<MVar> vars = p_item.getVars();
+
+                        if( vars != null )
+                            for(MVar mvar : vars){
+
+                                int vindex = static_vars.indexOf(mvar);
+                                if( vindex > -1 )
+                                {
+                                    static_vars.get(vindex).count++;
+                                }
+                                else{
+                                    static_vars.add(mvar);
+                                    mvar.count = 1;
+                                }
+
+                            }
+
+
+
+
+                    }
+
+                    //log('flow->'+from);
+                }
+            }
+        }
+
+        return static_vars;
+
+
+    }
+
+
 
 }

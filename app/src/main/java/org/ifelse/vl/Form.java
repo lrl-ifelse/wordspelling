@@ -12,7 +12,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.TextView;
-import org.ifelse.speakword.R;
+import org.ifelse.wordspelling.R;
 import org.ifelse.vldata.Event;
 
 import java.lang.reflect.Field;
@@ -127,7 +127,7 @@ public class Form extends AppCompatActivity {
 
     }
 
-    public void canel(Event event) {
+    public void cancel(Event event) {
         VL.cancel(event);
     }
 
