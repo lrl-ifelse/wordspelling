@@ -32,7 +32,7 @@ public class Asr extends FlowPoint {
                     @Override
                     public void onEvent(String name, String params, byte[] bytes, int offset, int length) {
 
-                        flowBox.log("asr name:%s params:%s [%s]",name,params,bytes==null?"null":new String(bytes,offset,length));
+                        flowBox.log("asr name:%s params:%s ",name,params);
                         switch (name){
 
                             case SpeechConstant.CALLBACK_EVENT_ASR_END:
@@ -41,13 +41,8 @@ public class Asr extends FlowPoint {
                                 break;
                             case SpeechConstant.CALLBACK_EVENT_ASR_PARTIAL:
                             {
-
-                                if( bytes != null )
-                                {
-                                    result = new String(bytes,offset,length);
+                                    result = params;
                                     flowBox.log(result);
-                                }
-
                             }
                                 break;
                             case  SpeechConstant.CALLBACK_EVENT_ASR_EXIT: {
@@ -57,11 +52,13 @@ public class Asr extends FlowPoint {
 
                                     try {
 
-                                        flowBox.log(result);
-
+                                        flowBox.log("ASR result str:%s",result);
                                         MAsr mAsr = JSON.parseObject(result, MAsr.class);
                                         if (mAsr.getError() == 0) {
                                             String str = mAsr.getBest_result();
+
+                                            flowBox.log("ASR result ok:%s",str);
+
                                             setValue(flowBox, "result", str.replace(" ", ""));
                                         }
 

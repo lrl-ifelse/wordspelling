@@ -6,6 +6,7 @@
 			"flow_point_id":"800103",
 			"height":40,
 			"id":"66",
+			"is_run_point":false,
 			"line":false,
 			"mproperties":[
 				{
@@ -34,14 +35,15 @@
 				}
 			],
 			"width":40,
-			"x":381,
-			"y":97
+			"x":347,
+			"y":95
 		},
 		{
 			"classname":"org.ifelse.vl.VLPoint",
 			"flow_point_id":"800104",
 			"height":40,
 			"id":"78",
+			"is_run_point":false,
 			"line":false,
 			"mproperties":[
 				{
@@ -67,6 +69,7 @@
 			"flow_point_id":"800101",
 			"height":40,
 			"id":"89",
+			"is_run_point":false,
 			"line":false,
 			"mproperties":[
 				{
@@ -92,6 +95,7 @@
 			"flow_point_id":"500101",
 			"height":40,
 			"id":"68",
+			"is_run_point":false,
 			"line":false,
 			"mproperties":[
 				{
@@ -120,14 +124,15 @@
 				}
 			],
 			"width":40,
-			"x":638,
-			"y":98
+			"x":590,
+			"y":90
 		},
 		{
 			"classname":"org.ifelse.vl.VLPoint",
 			"flow_point_id":"100103",
 			"height":40,
 			"id":"80",
+			"is_run_point":false,
 			"line":false,
 			"mproperties":[
 				{
@@ -157,14 +162,15 @@
 				}
 			],
 			"width":40,
-			"x":536,
-			"y":97
+			"x":495,
+			"y":91
 		},
 		{
 			"classname":"org.ifelse.vl.VLPoint",
 			"flow_point_id":"400101",
 			"height":40,
 			"id":"91",
+			"is_run_point":false,
 			"line":false,
 			"mproperties":[
 				{
@@ -195,6 +201,7 @@
 			"flow_point_id":"800103",
 			"height":40,
 			"id":"92",
+			"is_run_point":false,
 			"line":false,
 			"mproperties":[
 				{
@@ -231,6 +238,7 @@
 			"flow_point_id":"700102",
 			"height":40,
 			"id":"60",
+			"is_run_point":false,
 			"line":false,
 			"mproperties":[
 				{
@@ -255,6 +263,7 @@
 			"flow_point_id":"100101",
 			"height":40,
 			"id":"50",
+			"is_run_point":false,
 			"line":false,
 			"mproperties":[
 				{
@@ -285,6 +294,7 @@
 			"flow_point_id":"800101",
 			"height":40,
 			"id":"72",
+			"is_run_point":false,
 			"line":false,
 			"mproperties":[
 				{
@@ -310,6 +320,7 @@
 			"flow_point_id":"400101",
 			"height":40,
 			"id":"83",
+			"is_run_point":false,
 			"line":false,
 			"mproperties":[
 				{
@@ -341,6 +352,7 @@
 			"flow_point_id":"700101",
 			"height":40,
 			"id":"51",
+			"is_run_point":false,
 			"line":false,
 			"mproperties":[
 				{
@@ -371,6 +383,7 @@
 			"flow_point_id":"600102",
 			"height":40,
 			"id":"84",
+			"is_run_point":false,
 			"line":false,
 			"mproperties":[
 				{
@@ -401,6 +414,7 @@
 			"flow_point_id":"100102",
 			"height":40,
 			"id":"53",
+			"is_run_point":false,
 			"line":false,
 			"mproperties":[
 				{
@@ -419,6 +433,7 @@
 			"flow_point_id":"600101",
 			"height":40,
 			"id":"64",
+			"is_run_point":false,
 			"line":false,
 			"mproperties":[
 				{
@@ -455,6 +470,7 @@
 			"flow_point_id":"100103",
 			"height":40,
 			"id":"87",
+			"is_run_point":false,
 			"line":false,
 			"mproperties":[
 				{
@@ -492,6 +508,7 @@
 			"id":"88",
 			"id_from":"84",
 			"id_to":"87",
+			"is_run_point":false,
 			"line":true,
 			"mproperties":[
 				{
@@ -524,38 +541,7 @@
 			"id":"67",
 			"id_from":"64",
 			"id_to":"66",
-			"line":true,
-			"mproperties":[
-				{
-					"key":"descript",
-					"name":"descript",
-					"visible":true
-				},
-				{
-					"args":"boolean",
-					"key":"isint",
-					"name":"isint",
-					"visible":true
-				},
-				{
-					"args":"Direction",
-					"key":"direction",
-					"name":"direction",
-					"visible":true
-				}
-			],
-			"txtPos":2,
-			"width":40,
-			"x":0,
-			"y":0
-		},
-		{
-			"classname":"org.ifelse.vl.VLLine",
-			"direct":0,
-			"height":40,
-			"id":"79",
-			"id_from":"72",
-			"id_to":"78",
+			"is_run_point":false,
 			"line":true,
 			"mproperties":[
 				{
@@ -588,6 +574,7 @@
 			"id":"81",
 			"id_from":"66",
 			"id_to":"80",
+			"is_run_point":false,
 			"line":true,
 			"mproperties":[
 				{
@@ -620,6 +607,7 @@
 			"id":"82",
 			"id_from":"80",
 			"id_to":"68",
+			"is_run_point":false,
 			"line":true,
 			"mproperties":[
 				{
@@ -652,6 +640,7 @@
 			"id":"93",
 			"id_from":"78",
 			"id_to":"92",
+			"is_run_point":false,
 			"line":true,
 			"mproperties":[
 				{
@@ -685,6 +674,7 @@
 			"id":"61",
 			"id_from":"51",
 			"id_to":"53",
+			"is_run_point":false,
 			"line":true,
 			"mproperties":[
 				{
@@ -718,6 +708,7 @@
 			"id":"94",
 			"id_from":"92",
 			"id_to":"91",
+			"is_run_point":false,
 			"line":true,
 			"mproperties":[
 				{
@@ -750,38 +741,7 @@
 			"id":"62",
 			"id_from":"53",
 			"id_to":"60",
-			"line":true,
-			"mproperties":[
-				{
-					"key":"descript",
-					"name":"descript",
-					"visible":true
-				},
-				{
-					"args":"boolean",
-					"key":"isint",
-					"name":"isint",
-					"visible":true
-				},
-				{
-					"args":"Direction",
-					"key":"direction",
-					"name":"direction",
-					"visible":true
-				}
-			],
-			"txtPos":2,
-			"width":40,
-			"x":0,
-			"y":0
-		},
-		{
-			"classname":"org.ifelse.vl.VLLine",
-			"direct":0,
-			"height":40,
-			"id":"73",
-			"id_from":"68",
-			"id_to":"72",
+			"is_run_point":false,
 			"line":true,
 			"mproperties":[
 				{
@@ -814,6 +774,7 @@
 			"id":"95",
 			"id_from":"91",
 			"id_to":"89",
+			"is_run_point":false,
 			"line":true,
 			"mproperties":[
 				{
@@ -846,6 +807,7 @@
 			"id":"52",
 			"id_from":"50",
 			"id_to":"51",
+			"is_run_point":false,
 			"line":true,
 			"mproperties":[
 				{
@@ -878,6 +840,7 @@
 			"id":"63",
 			"id_from":"60",
 			"id_to":"51",
+			"is_run_point":false,
 			"line":true,
 			"mproperties":[
 				{
@@ -910,12 +873,13 @@
 			"id":"85",
 			"id_from":"78",
 			"id_to":"83",
+			"is_run_point":false,
 			"line":true,
 			"mproperties":[
 				{
 					"key":"descript",
 					"name":"descript",
-					"value":"$en==$asr_en",
+					"value":"$entrim==$asr_en",
 					"visible":true
 				},
 				{
@@ -943,6 +907,7 @@
 			"id":"96",
 			"id_from":"89",
 			"id_to":"87",
+			"is_run_point":false,
 			"line":true,
 			"mproperties":[
 				{
@@ -975,6 +940,7 @@
 			"id":"86",
 			"id_from":"83",
 			"id_to":"84",
+			"is_run_point":false,
 			"line":true,
 			"mproperties":[
 				{
@@ -1007,12 +973,149 @@
 			"id":"65",
 			"id_from":"51",
 			"id_to":"64",
+			"is_run_point":false,
 			"line":true,
 			"mproperties":[
 				{
 					"key":"descript",
 					"name":"descript",
 					"value":"$had",
+					"visible":true
+				},
+				{
+					"args":"boolean",
+					"key":"isint",
+					"name":"isint",
+					"visible":true
+				},
+				{
+					"args":"Direction",
+					"key":"direction",
+					"name":"direction",
+					"visible":true
+				}
+			],
+			"txtPos":2,
+			"width":40,
+			"x":0,
+			"y":0
+		},
+		{
+			"classname":"org.ifelse.vl.VLPoint",
+			"flow_point_id":"400102",
+			"height":40,
+			"id":"140",
+			"is_run_point":false,
+			"line":false,
+			"mproperties":[
+				{
+					"key":"method",
+					"name":"method",
+					"value":"trim",
+					"visible":true
+				},
+				{
+					"key":"in",
+					"name":"in",
+					"value":"$en",
+					"visible":true
+				},
+				{
+					"key":"out",
+					"name":"out",
+					"value":"$entrim",
+					"visible":true
+				},
+				{
+					"key":"descript",
+					"name":"descript",
+					"value":"字符处理",
+					"visible":true
+				}
+			],
+			"width":40,
+			"x":676,
+			"y":89
+		},
+		{
+			"classname":"org.ifelse.vl.VLLine",
+			"direct":0,
+			"height":40,
+			"id":"141",
+			"id_from":"68",
+			"id_to":"140",
+			"is_run_point":false,
+			"line":true,
+			"mproperties":[
+				{
+					"key":"descript",
+					"name":"descript",
+					"visible":true
+				},
+				{
+					"args":"boolean",
+					"key":"isint",
+					"name":"isint",
+					"visible":true
+				},
+				{
+					"args":"Direction",
+					"key":"direction",
+					"name":"direction",
+					"visible":true
+				}
+			],
+			"txtPos":2,
+			"width":40,
+			"x":0,
+			"y":0
+		},
+		{
+			"classname":"org.ifelse.vl.VLLine",
+			"direct":0,
+			"height":40,
+			"id":"142",
+			"id_from":"140",
+			"id_to":"72",
+			"is_run_point":false,
+			"line":true,
+			"mproperties":[
+				{
+					"key":"descript",
+					"name":"descript",
+					"visible":true
+				},
+				{
+					"args":"boolean",
+					"key":"isint",
+					"name":"isint",
+					"visible":true
+				},
+				{
+					"args":"Direction",
+					"key":"direction",
+					"name":"direction",
+					"visible":true
+				}
+			],
+			"txtPos":2,
+			"width":40,
+			"x":0,
+			"y":0
+		},
+		{
+			"classname":"org.ifelse.vl.VLLine",
+			"direct":0,
+			"height":40,
+			"id":"143",
+			"id_from":"72",
+			"id_to":"78",
+			"is_run_point":false,
+			"line":true,
+			"mproperties":[
+				{
+					"key":"descript",
+					"name":"descript",
 					"visible":true
 				},
 				{

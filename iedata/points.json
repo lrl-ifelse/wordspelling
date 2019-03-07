@@ -85,7 +85,7 @@
 				"classz": "org.ifelse.points.StringUtil",
 				"icon": "/iedata/icons/101.png",
 				"id": "400101",
-				"name": "字符处理",
+				"name": "字符运算",
 				"doubleclick": "R.open_point",
 				"mproperties": [
 
@@ -97,6 +97,34 @@
 						"key":"isnumber",
 						"name":"isnumber",
 						"args": "boolean"
+					},{
+						"key":"descript",
+						"name":"descript",
+						"value": "字符运算"
+					}
+				]
+			},
+			{
+				"classz": "org.ifelse.points.StringUtil2",
+				"icon": "/iedata/icons/101.png",
+				"id": "400102",
+				"name": "字符操作",
+				"doubleclick": "R.open_point",
+				"mproperties": [
+
+					{
+						"key":"method",
+						"name":"method"
+					},
+					{
+						"key":"in",
+						"name":"in"
+
+					},
+					{
+						"key":"out",
+						"name":"out"
+
 					},{
 						"key":"descript",
 						"name":"descript",

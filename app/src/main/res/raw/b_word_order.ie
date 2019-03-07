@@ -6,6 +6,7 @@
 			"flow_point_id":"600101",
 			"height":40,
 			"id":"33",
+			"is_run_point":false,
 			"line":false,
 			"mproperties":[
 				{
@@ -42,6 +43,7 @@
 			"flow_point_id":"100103",
 			"height":40,
 			"id":"67",
+			"is_run_point":false,
 			"line":false,
 			"mproperties":[
 				{
@@ -78,6 +80,7 @@
 			"flow_point_id":"800103",
 			"height":40,
 			"id":"35",
+			"is_run_point":false,
 			"line":false,
 			"mproperties":[
 				{
@@ -114,6 +117,7 @@
 			"flow_point_id":"100103",
 			"height":40,
 			"id":"47",
+			"is_run_point":false,
 			"line":false,
 			"mproperties":[
 				{
@@ -150,6 +154,7 @@
 			"flow_point_id":"500101",
 			"height":40,
 			"id":"59",
+			"is_run_point":false,
 			"line":false,
 			"mproperties":[
 				{
@@ -186,6 +191,7 @@
 			"flow_point_id":"800101",
 			"height":40,
 			"id":"39",
+			"is_run_point":false,
 			"line":false,
 			"mproperties":[
 				{
@@ -211,6 +217,7 @@
 			"flow_point_id":"800103",
 			"height":40,
 			"id":"105",
+			"is_run_point":false,
 			"line":false,
 			"mproperties":[
 				{
@@ -247,6 +254,7 @@
 			"flow_point_id":"800101",
 			"height":40,
 			"id":"106",
+			"is_run_point":false,
 			"line":false,
 			"mproperties":[
 				{
@@ -272,6 +280,7 @@
 			"flow_point_id":"600102",
 			"height":40,
 			"id":"62",
+			"is_run_point":false,
 			"line":false,
 			"mproperties":[
 				{
@@ -302,6 +311,7 @@
 			"flow_point_id":"400101",
 			"height":40,
 			"id":"40",
+			"is_run_point":false,
 			"line":false,
 			"mproperties":[
 				{
@@ -333,6 +343,7 @@
 			"flow_point_id":"100101",
 			"height":40,
 			"id":"32",
+			"is_run_point":false,
 			"line":false,
 			"mproperties":[
 				{
@@ -363,6 +374,7 @@
 			"flow_point_id":"800101",
 			"height":40,
 			"id":"54",
+			"is_run_point":false,
 			"line":false,
 			"mproperties":[
 				{
@@ -390,6 +402,7 @@
 			"id":"79",
 			"id_from":"62",
 			"id_to":"67",
+			"is_run_point":false,
 			"line":true,
 			"mproperties":[
 				{
@@ -422,6 +435,7 @@
 			"id":"36",
 			"id_from":"39",
 			"id_to":"54",
+			"is_run_point":false,
 			"line":true,
 			"mproperties":[
 				{
@@ -454,6 +468,7 @@
 			"id":"48",
 			"id_from":"35",
 			"id_to":"47",
+			"is_run_point":false,
 			"line":true,
 			"mproperties":[
 				{
@@ -466,6 +481,7 @@
 					"args":"boolean",
 					"key":"isint",
 					"name":"isint",
+					"value":"false",
 					"visible":true
 				},
 				{
@@ -487,6 +503,7 @@
 			"id":"49",
 			"id_from":"47",
 			"id_to":"59",
+			"is_run_point":false,
 			"line":true,
 			"mproperties":[
 				{
@@ -519,6 +536,7 @@
 			"id":"107",
 			"id_from":"54",
 			"id_to":"105",
+			"is_run_point":false,
 			"line":true,
 			"mproperties":[
 				{
@@ -551,6 +569,7 @@
 			"id":"108",
 			"id_from":"105",
 			"id_to":"106",
+			"is_run_point":false,
 			"line":true,
 			"mproperties":[
 				{
@@ -583,6 +602,7 @@
 			"id":"109",
 			"id_from":"106",
 			"id_to":"40",
+			"is_run_point":false,
 			"line":true,
 			"mproperties":[
 				{
@@ -615,6 +635,7 @@
 			"id":"83",
 			"id_from":"33",
 			"id_to":"35",
+			"is_run_point":false,
 			"line":true,
 			"mproperties":[
 				{
@@ -647,6 +668,7 @@
 			"id":"85",
 			"id_from":"59",
 			"id_to":"39",
+			"is_run_point":false,
 			"line":true,
 			"mproperties":[
 				{
@@ -679,6 +701,7 @@
 			"id":"42",
 			"id_from":"40",
 			"id_to":"62",
+			"is_run_point":false,
 			"line":true,
 			"mproperties":[
 				{
@@ -711,6 +734,7 @@
 			"id":"32",
 			"id_from":"32",
 			"id_to":"33",
+			"is_run_point":false,
 			"line":true,
 			"mproperties":[
 				{

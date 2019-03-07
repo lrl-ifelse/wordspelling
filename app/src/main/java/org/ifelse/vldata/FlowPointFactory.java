@@ -10,7 +10,8 @@ public class FlowPointFactory{
            case 100101 : return new org.ifelse.points.Start();//Start
            case 100102 : return new org.ifelse.points.PointNone();//注释
            case 100103 : return new org.ifelse.points.EventSend();//发送事件
-           case 400101 : return new org.ifelse.points.StringUtil();//字符处理
+           case 400101 : return new org.ifelse.points.StringUtil();//字符运算
+           case 400102 : return new org.ifelse.points.StringUtil2();//字符操作
            case 500101 : return new org.ifelse.points.ObjectRead();//对象取值
            case 500102 : return new org.ifelse.points.ObjectSet();//对象赋值
            case 600101 : return new org.ifelse.points.UserData();//本地数据

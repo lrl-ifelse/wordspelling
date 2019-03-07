@@ -91,8 +91,8 @@
 				}
 			],
 			"width":40,
-			"x":569,
-			"y":350
+			"x":568,
+			"y":360
 		},
 		{
 			"classname":"org.ifelse.vl.VLPoint",
@@ -479,7 +479,7 @@
 				{
 					"key":"descript",
 					"name":"descript",
-					"value":"$storage",
+					"value":"else",
 					"visible":true
 				},
 				{
@@ -681,7 +681,7 @@
 				{
 					"key":"descript",
 					"name":"descript",
-					"value":"else",
+					"value":"$storage",
 					"visible":true
 				},
 				{

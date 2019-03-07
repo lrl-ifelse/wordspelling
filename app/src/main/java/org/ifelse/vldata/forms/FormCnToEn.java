@@ -78,7 +78,9 @@ public class FormCnToEn extends Form{
                 setContentView(R.layout.formcntoen);
                 setTitle("单词拼写");
                 break;
-            case FS_PAUSE:
+            case FS_STOP:
+                btn_start.setEnabled(true);
+                btn_start.setText("开始");
                 cancel(Event.B_WORD_TEST_CN_TO_EN);
                 break;
         }

@@ -38,7 +38,7 @@
     如何绘制一个流程
     在流程管理界面 
 
-## log
+## log 流程执行输出了统一格式的内容
 
     W/系统初始化-225921130: point(5)[0] 起始点 :Start
     W/系统初始化-225921130: Start params:null
@@ -61,6 +61,6 @@
     W/系统初始化-225921130: flow is over. duration:7784
 
 
-    copy log 后 选择流程后 ctrl + i 导入log
-    显示执行顺序
+    拷贝 log 后 选择对应流程 ctrl + i 导入log
+    显示执行顺序加快调试时间
 ![avatar](./images/flow_log.jpg)
