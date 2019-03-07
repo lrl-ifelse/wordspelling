@@ -16,8 +16,8 @@ public class ObjectRead extends FlowPoint {
     public void run(FlowBox flowBox) throws Exception {
 
         Object obj = getVarValue(flowBox,key_data);
-        String field = getVarString(flowBox,key_field);
-        String value = getVarString(flowBox,key_value);
+        String field = getVarName(key_field);
+        String value = getVarName(key_value);
 
         String[] fields = field.split(",");
         String[] values = value.split(",");

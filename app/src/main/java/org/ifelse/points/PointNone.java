@@ -12,9 +12,7 @@ public class PointNone extends FlowPoint {
     @Override
     public void run(FlowBox flowBox) throws Exception {
 
-        String descript = params.get("descript");
-        if( flowBox.isVar(descript) )
-            flowBox.log("%s",flowBox.getValue(descript));
+        flowBox.log("%s",getVarString(flowBox,"descript"));
         flowBox.notifyFlowContinue();
 
     }
