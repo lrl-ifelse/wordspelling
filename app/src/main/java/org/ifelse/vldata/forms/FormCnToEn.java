@@ -58,6 +58,7 @@ public class FormCnToEn extends Form{
             case B_WORD_SPEAKING: {
                 MWord word = (MWord) value;
                 text_cn.setText(word.cn);
+                text_en.setText("");
             }
                 return true;
             case B_WORD_TEST_SPELLING_ERROR: {
