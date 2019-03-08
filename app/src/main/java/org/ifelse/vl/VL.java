@@ -3,7 +3,6 @@ package org.ifelse.vl;
 import android.app.Application;
 import android.os.Handler;
 import android.os.Looper;
-import org.ifelse.wordspelling.JKApp;
 import org.ifelse.vldata.Event;
 import org.ifelse.vldata.FlowBoxs;
 
@@ -17,8 +16,8 @@ public class VL {
 
     private static VL _instance = new VL();
 
-    private FormManager _form_manager;
-    private Application _applistion;
+    FormManager _form_manager;
+    Application _application;
 
     public static VL getInstance(){
 
@@ -28,8 +27,8 @@ public class VL {
     public static void send(final Event event, final Object value){
 
         log("event :%s value:%s",event,value);
-        if( _instance._adapter == null ) {
-            log("event :%s","业务拦截适配器未实现");
+        if( _instance._adapter == null || _instance._application == null  ) {
+            log("VL._instance 未实现,需要在Application 中实现 VL.setAdapter() ");
             return;
         }
         if( !_instance._adapter.onEvent(event,value) ){//业务拦截
@@ -64,13 +63,13 @@ public class VL {
             if( flow != 0 ){
                 log("流程事件");
 
-                FlowBox box = FlowMaker.parse(JKApp.instance,flow,event);
+                FlowBox box = FlowMaker.parse(_instance._application,flow,event);
 
                 if( box != null )
                     box.run(value);
                 else{
 
-                    throw new RuntimeException(String.format("未实现流程:%s", FlowBoxs.getBoxInfo(event).name));
+                    throw new RuntimeException(String.format("未实现或解析流程文件失败:%s %s",event, FlowBoxs.getBoxInfo(event).name));
                 }
 
                 return;
@@ -103,6 +102,8 @@ public class VL {
 
         _instance._form_manager = new FormManager(application);
         _instance._adapter = adapter;
+        _instance._application = application;
+
         NLog.release = !adapter.isDebug();
         NLog.on("初始化 运行环境");
 

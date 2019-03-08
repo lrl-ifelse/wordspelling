@@ -12,7 +12,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.TextView;
-import org.ifelse.wordspelling.R;
 import org.ifelse.vldata.Event;
 
 import java.lang.reflect.Field;
@@ -177,14 +176,14 @@ public class Form extends AppCompatActivity {
 
     public int getAnimationEnter(boolean fromback) {
 
-        return fromback ? R.anim.slide_in_left : R.anim.slide_in_right;
+        return 0;//fromback ? R.anim.slide_in_left : R.anim.slide_in_right;
 
 
     }
 
     public int getAnimationExit(boolean enterback) {
 
-        return enterback ? R.anim.slide_out_left : R.anim.slide_out_right;
+        return 0;//enterback ? R.anim.slide_out_left : R.anim.slide_out_right;
 
     }
 

@@ -1,12 +1,12 @@
 package org.ifelse.vl;
 
 import android.util.Log;
-import org.ifelse.wordspelling.BuildConfig;
+
 
 
 public class NLog {
 
-	public static boolean release = !BuildConfig.DEBUG;
+	public static boolean release = false;
 	static String tag = "NLog";
 	
 	public static void o(String str)
@@ -70,6 +70,7 @@ public class NLog {
 
 		if( release ) return;
 		else{
+			Log.e(tag,e.toString());
 			e.printStackTrace();
 		}
 

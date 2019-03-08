@@ -10,8 +10,6 @@ import android.support.v4.app.ActivityCompat;
 import android.support.v4.app.ActivityOptionsCompat;
 import android.support.v4.util.Pair;
 import android.view.View;
-import org.ifelse.wordspelling.JKApp;
-import org.ifelse.wordspelling.R;
 import org.ifelse.vldata.Event;
 
 import java.lang.ref.WeakReference;
@@ -144,7 +142,7 @@ public class FormManager {
         final Form current_form = top();
 
 
-        final Context context = current_form==null? JKApp.instance:current_form;
+        final Context context = current_form==null? _application:current_form;
 
         WeakReference<Form> wr = _forms.get(formClass);
 
@@ -199,11 +197,7 @@ public class FormManager {
 
                 log("创建并启动页面 无FormParams:%s",formClass);
 
-
-
-
-
-                ActivityOptionsCompat compat = ActivityOptionsCompat.makeCustomAnimation(context, R.anim.fade_in_0,R.anim.fade_in_0);
+                ActivityOptionsCompat compat = ActivityOptionsCompat.makeCustomAnimation(context, 0,0);//添加默认转场动画
                 if( current_form == null )
                     intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                 ActivityCompat.startActivity(context, intent, compat.toBundle());
@@ -223,11 +217,9 @@ public class FormManager {
 
 
             int enter = form.getAnimationEnter(true);
-            if( enter == 0 )
-                enter = R.anim.fade_in_0;
+
             int exit = current_form.getAnimationExit(false);
-            if( exit == 0 )
-                exit = R.anim.fade_in_0;
+
 
 
             ActivityOptionsCompat compat = ActivityOptionsCompat.makeCustomAnimation(current_form,enter,exit);

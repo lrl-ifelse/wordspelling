@@ -48,8 +48,6 @@ ext {
             "banner"                : "com.youth.banner:banner:1.4.10",                         //banner
             "hawk"                  : "com.orhanobut:hawk:2.0.1",                                //简单的Key-Value存储
             "segmented"             : "info.hoang8f:android-segmented:1.0.6",                   //tab 控件
-            "lrlib"                 : "lrl:lrlib:1.5.0",                                         //框架资源
-            "lrlib"                 : "lrl:lrlib:1.5.0",                                         //框架资源
             "photoview"             : "com.github.chrisbanes:PhotoView:2.1.3",                   //图片浏览
             "SpinKit"               : "com.github.ybq:Android-SpinKit:1.1.0",//loading加载框
             "NewbieGuide"           : "com.github.huburt-Hu:NewbieGuide:v2.4.0",//NewbieGuide

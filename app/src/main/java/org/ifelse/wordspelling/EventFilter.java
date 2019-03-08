@@ -4,11 +4,9 @@ import android.annotation.SuppressLint;
 import android.content.DialogInterface;
 import android.text.TextUtils;
 import android.view.View;
-import android.widget.Button;
 import android.widget.TextView;
 
 import org.ifelse.models.MDialogConfirmData;
-import org.ifelse.points.StringUtil;
 import org.ifelse.ui.DDialog;
 import org.ifelse.vl.VL;
 import org.ifelse.vldata.Event;
