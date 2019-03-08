@@ -41,6 +41,14 @@ public class FormMain extends Form{
 
             }
                 break;
+            case R.id.btn_dialog:{
+
+
+                sendMessage(Event.B_WORD_TEST_EN_TO_CN,"1");
+
+
+            }
+                break;
 
         }
 

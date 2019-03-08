@@ -30,6 +30,11 @@
 		"descript":"英译汗"
 	},
 	{
+		"name":"B_WORD_TEST_SPELLING_ERROR",
+		"id":"144",
+		"descript":"拼写错误"
+	},
+	{
 		"name":"F_CODE_EXAMPLE",
 		"id":"99",
 		"descript":"代码示例"
@@ -53,5 +58,10 @@
 		"name":"F_TEST_CN_TO_EN",
 		"id":"74",
 		"descript":"汉译英页面"
+	},
+	{
+		"name":"S_DIALOG_CONFIRM",
+		"id":"148",
+		"descript":"确认对话框"
 	}
 ]

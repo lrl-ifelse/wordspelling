@@ -42,7 +42,7 @@ public class BPoint extends FlowPoint {
 
             char c = instr.charAt(i);
             if( c != ' ')
-                stringBuffer.append(instr.charAt(i)).append(' ');
+                stringBuffer.append(instr.charAt(i)).append(',');
 
         }
 

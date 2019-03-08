@@ -3,9 +3,57 @@
 	"items":[
 		{
 			"classname":"org.ifelse.vl.VLPoint",
+			"flow_point_id":"300101",
+			"height":40,
+			"id":"154",
+			"is_run_point":false,
+			"line":false,
+			"mproperties":[
+				{
+					"key":"title",
+					"name":"title",
+					"value":"提示",
+					"visible":true
+				},
+				{
+					"key":"message",
+					"name":"message",
+					"value":"你选择的取消",
+					"visible":true
+				},
+				{
+					"key":"button_ok",
+					"name":"ok text",
+					"value":"确定",
+					"visible":true
+				},
+				{
+					"key":"button_cancel",
+					"name":"cancel text",
+					"visible":true
+				},
+				{
+					"key":"selectindex",
+					"name":"select index",
+					"visible":true
+				},
+				{
+					"key":"descript",
+					"name":"descript",
+					"value":"确认对话框",
+					"visible":true
+				}
+			],
+			"width":40,
+			"x":531,
+			"y":312
+		},
+		{
+			"classname":"org.ifelse.vl.VLPoint",
 			"flow_point_id":"100101",
 			"height":40,
 			"id":"1",
+			"is_run_point":false,
 			"line":false,
 			"mproperties":[
 				{
@@ -18,18 +66,283 @@
 				{
 					"key":"value",
 					"name":"value",
-					"visible":false
+					"value":"$arg",
+					"visible":true
 				},
 				{
 					"key":"descript",
 					"name":"descript",
 					"value":"起始点",
-					"visible":false
+					"visible":true
 				}
 			],
 			"width":40,
-			"x":50,
-			"y":50
+			"x":73,
+			"y":197
+		},
+		{
+			"classname":"org.ifelse.vl.VLPoint",
+			"flow_point_id":"300101",
+			"height":40,
+			"id":"149",
+			"is_run_point":false,
+			"line":false,
+			"mproperties":[
+				{
+					"key":"title",
+					"name":"title",
+					"value":"提示",
+					"visible":true
+				},
+				{
+					"key":"message",
+					"name":"message",
+					"value":"$msg",
+					"visible":true
+				},
+				{
+					"key":"button_ok",
+					"name":"ok text",
+					"value":"确认",
+					"visible":true
+				},
+				{
+					"key":"button_cancel",
+					"name":"cancel text",
+					"value":"取消",
+					"visible":true
+				},
+				{
+					"key":"selectindex",
+					"name":"select index",
+					"value":"$select_index",
+					"visible":true
+				},
+				{
+					"key":"descript",
+					"name":"descript",
+					"value":"确认对话框",
+					"visible":true
+				}
+			],
+			"width":40,
+			"x":311,
+			"y":199
+		},
+		{
+			"classname":"org.ifelse.vl.VLPoint",
+			"flow_point_id":"400101",
+			"height":40,
+			"id":"150",
+			"is_run_point":false,
+			"line":false,
+			"mproperties":[
+				{
+					"key":"condition",
+					"name":"condition",
+					"value":"$msg=你传入的参数为{$arg}",
+					"visible":true
+				},
+				{
+					"args":"boolean",
+					"key":"isnumber",
+					"name":"isnumber",
+					"visible":true
+				},
+				{
+					"key":"descript",
+					"name":"descript",
+					"value":"字符运算",
+					"visible":true
+				}
+			],
+			"width":40,
+			"x":180,
+			"y":195
+		},
+		{
+			"classname":"org.ifelse.vl.VLPoint",
+			"flow_point_id":"300101",
+			"height":40,
+			"id":"153",
+			"is_run_point":false,
+			"line":false,
+			"mproperties":[
+				{
+					"key":"title",
+					"name":"title",
+					"value":"提示",
+					"visible":true
+				},
+				{
+					"key":"message",
+					"name":"message",
+					"value":"你选择的确认",
+					"visible":true
+				},
+				{
+					"key":"button_ok",
+					"name":"ok text",
+					"value":"确定",
+					"visible":true
+				},
+				{
+					"key":"button_cancel",
+					"name":"cancel text",
+					"visible":true
+				},
+				{
+					"key":"selectindex",
+					"name":"select index",
+					"visible":true
+				},
+				{
+					"key":"descript",
+					"name":"descript",
+					"value":"确认对话框",
+					"visible":true
+				}
+			],
+			"width":40,
+			"x":653,
+			"y":114
+		},
+		{
+			"classname":"org.ifelse.vl.VLLine",
+			"direct":0,
+			"height":40,
+			"id":"155",
+			"id_from":"149",
+			"id_to":"153",
+			"is_run_point":false,
+			"line":true,
+			"mproperties":[
+				{
+					"key":"descript",
+					"name":"descript",
+					"value":"$select_index==0",
+					"visible":true
+				},
+				{
+					"args":"boolean",
+					"key":"isint",
+					"name":"isint",
+					"value":"true",
+					"visible":true
+				},
+				{
+					"args":"Direction",
+					"key":"direction",
+					"name":"direction",
+					"value":"horizontal",
+					"visible":true
+				}
+			],
+			"txtPos":1,
+			"width":40,
+			"x":0,
+			"y":0
+		},
+		{
+			"classname":"org.ifelse.vl.VLLine",
+			"direct":0,
+			"height":40,
+			"id":"156",
+			"id_from":"149",
+			"id_to":"154",
+			"is_run_point":false,
+			"line":true,
+			"mproperties":[
+				{
+					"key":"descript",
+					"name":"descript",
+					"value":"else",
+					"visible":true
+				},
+				{
+					"args":"boolean",
+					"key":"isint",
+					"name":"isint",
+					"visible":true
+				},
+				{
+					"args":"Direction",
+					"key":"direction",
+					"name":"direction",
+					"value":"horizontal",
+					"visible":true
+				}
+			],
+			"txtPos":1,
+			"width":40,
+			"x":0,
+			"y":0
+		},
+		{
+			"classname":"org.ifelse.vl.VLLine",
+			"direct":0,
+			"height":40,
+			"id":"151",
+			"id_from":"1",
+			"id_to":"150",
+			"is_run_point":false,
+			"line":true,
+			"mproperties":[
+				{
+					"key":"descript",
+					"name":"descript",
+					"visible":true
+				},
+				{
+					"args":"boolean",
+					"key":"isint",
+					"name":"isint",
+					"visible":true
+				},
+				{
+					"args":"Direction",
+					"key":"direction",
+					"name":"direction",
+					"visible":true
+				}
+			],
+			"txtPos":2,
+			"width":40,
+			"x":0,
+			"y":0
+		},
+		{
+			"classname":"org.ifelse.vl.VLLine",
+			"direct":0,
+			"height":40,
+			"id":"152",
+			"id_from":"150",
+			"id_to":"149",
+			"is_run_point":false,
+			"line":true,
+			"mproperties":[
+				{
+					"key":"descript",
+					"name":"descript",
+					"visible":true
+				},
+				{
+					"args":"boolean",
+					"key":"isint",
+					"name":"isint",
+					"visible":true
+				},
+				{
+					"args":"Direction",
+					"key":"direction",
+					"name":"direction",
+					"visible":true
+				}
+			],
+			"txtPos":2,
+			"width":40,
+			"x":0,
+			"y":0
 		}
 	],
 	"title":"英译汉"

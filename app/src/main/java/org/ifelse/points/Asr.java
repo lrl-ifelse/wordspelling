@@ -82,7 +82,8 @@ public class Asr extends FlowPoint {
                     }
                 });
 
-                String json ="{\"accept-audio-data\":false,\"disable-punctuation\":false,\"accept-audio-volume\":true,\"pid\":1737}";
+                //String json ="{\"accept-audio-data\":false,\"disable-punctuation\":false,\"accept-audio-volume\":false,\"pid\":1737}";
+                String json ="{\"accept-audio-volume\":false}";
 
 
                 JKApp.instance.asr.send(SpeechConstant.ASR_START, json, null, 0, 0);

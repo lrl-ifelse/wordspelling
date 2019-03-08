@@ -40,11 +40,11 @@ public class FormFlash extends Form{
                 break;
 
             case FS_UI_INIT:
-
+                sendMessage(Event.B_INIT);
 
                 break;
             case FS_RESUME:
-                sendMessage(Event.B_INIT);
+
                 break;
             case FS_PAUSE:
 

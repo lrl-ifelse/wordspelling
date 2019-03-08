@@ -6,7 +6,7 @@ import org.ifelse.vl.FlowPoint;
 public class Start extends FlowPoint {
 
 
-    static final String key_params = "params";
+    static final String key_params = "value";
 
     @Override
     public boolean isStart() {
@@ -19,7 +19,8 @@ public class Start extends FlowPoint {
     public void run(FlowBox flowBox) throws Exception {
 
         flowBox.log("Start params:%s", flowBox.getFlowParam());
-        String paramstr = params.get(key_params);
+
+        String paramstr = getVarName(key_params);
         if (!isNull(paramstr)) {
             flowBox.setValue(paramstr, flowBox.getFlowParam());
         }

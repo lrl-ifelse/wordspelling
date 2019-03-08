@@ -76,6 +76,57 @@
 		]
 	},
 	{
+
+		"id": "3001",
+		"name": "UI",
+		"points":[
+
+			{
+				"classz": "org.ifelse.points.DialogConfirm",
+				"icon": "/iedata/icons/003.png",
+				"id": "300101",
+				"name": "确认对话框",
+				"doubleclick": "R.open_point",
+				"mproperties": [
+
+					{
+						"key":"title",
+						"name":"title"
+					},
+					{
+						"key":"message",
+						"name":"message"
+
+					},
+					{
+						"key":"button_ok",
+						"name":"ok text"
+
+					},
+					{
+						"key":"button_cancel",
+						"name":"cancel text"
+
+					},
+					{
+						"key":"selectindex",
+						"name":"select index"
+
+					},
+					{
+						"key":"descript",
+						"name":"descript",
+						"value": "确认对话框"
+					}
+				]
+			}
+
+
+
+		]
+
+	},
+	{
 		"id": "4001",
 		"name": "字符",
 		"points": [

@@ -11,11 +11,13 @@ public enum Event{
     B_WORD_SPEAKING,//正在朗读
     B_WORD_TEST_CN_TO_EN,//汉子拼单词
     B_WORD_TEST_EN_TO_CN,//英译汗
+    B_WORD_TEST_SPELLING_ERROR,//拼写错误
     F_CODE_EXAMPLE,//代码示例
     F_FLASH,//启动页
     F_MAIN,//主页面
     F_ORDER,//循序朗读
     F_TEST_CN_TO_EN,//汉译英页面
+    S_DIALOG_CONFIRM,//确认对话框
 
     S_NONE;
 
@@ -29,11 +31,13 @@ public enum Event{
             case 43 : return Event.B_WORD_SPEAKING;
             case 49 : return Event.B_WORD_TEST_CN_TO_EN;
             case 97 : return Event.B_WORD_TEST_EN_TO_CN;
+            case 144 : return Event.B_WORD_TEST_SPELLING_ERROR;
             case 99 : return Event.F_CODE_EXAMPLE;
             case 5 : return Event.F_FLASH;
             case 1 : return Event.F_MAIN;
             case 2 : return Event.F_ORDER;
             case 74 : return Event.F_TEST_CN_TO_EN;
+            case 148 : return Event.S_DIALOG_CONFIRM;
 
         }
         return Event.S_NONE;

@@ -87,8 +87,8 @@
 				}
 			],
 			"width":40,
-			"x":665,
-			"y":449
+			"x":561,
+			"y":564
 		},
 		{
 			"classname":"org.ifelse.vl.VLPoint",
@@ -126,6 +126,43 @@
 			"width":40,
 			"x":590,
 			"y":90
+		},
+		{
+			"classname":"org.ifelse.vl.VLPoint",
+			"flow_point_id":"400102",
+			"height":40,
+			"id":"140",
+			"is_run_point":false,
+			"line":false,
+			"mproperties":[
+				{
+					"key":"method",
+					"name":"method",
+					"value":"trim",
+					"visible":true
+				},
+				{
+					"key":"in",
+					"name":"in",
+					"value":"$en",
+					"visible":true
+				},
+				{
+					"key":"out",
+					"name":"out",
+					"value":"$entrim",
+					"visible":true
+				},
+				{
+					"key":"descript",
+					"name":"descript",
+					"value":"字符处理",
+					"visible":true
+				}
+			],
+			"width":40,
+			"x":676,
+			"y":89
 		},
 		{
 			"classname":"org.ifelse.vl.VLPoint",
@@ -571,6 +608,105 @@
 			"classname":"org.ifelse.vl.VLLine",
 			"direct":0,
 			"height":40,
+			"id":"141",
+			"id_from":"68",
+			"id_to":"140",
+			"is_run_point":false,
+			"line":true,
+			"mproperties":[
+				{
+					"key":"descript",
+					"name":"descript",
+					"visible":true
+				},
+				{
+					"args":"boolean",
+					"key":"isint",
+					"name":"isint",
+					"visible":true
+				},
+				{
+					"args":"Direction",
+					"key":"direction",
+					"name":"direction",
+					"visible":true
+				}
+			],
+			"txtPos":2,
+			"width":40,
+			"x":0,
+			"y":0
+		},
+		{
+			"classname":"org.ifelse.vl.VLLine",
+			"direct":0,
+			"height":40,
+			"id":"142",
+			"id_from":"140",
+			"id_to":"72",
+			"is_run_point":false,
+			"line":true,
+			"mproperties":[
+				{
+					"key":"descript",
+					"name":"descript",
+					"visible":true
+				},
+				{
+					"args":"boolean",
+					"key":"isint",
+					"name":"isint",
+					"visible":true
+				},
+				{
+					"args":"Direction",
+					"key":"direction",
+					"name":"direction",
+					"visible":true
+				}
+			],
+			"txtPos":2,
+			"width":40,
+			"x":0,
+			"y":0
+		},
+		{
+			"classname":"org.ifelse.vl.VLLine",
+			"direct":0,
+			"height":40,
+			"id":"143",
+			"id_from":"72",
+			"id_to":"78",
+			"is_run_point":false,
+			"line":true,
+			"mproperties":[
+				{
+					"key":"descript",
+					"name":"descript",
+					"visible":true
+				},
+				{
+					"args":"boolean",
+					"key":"isint",
+					"name":"isint",
+					"visible":true
+				},
+				{
+					"args":"Direction",
+					"key":"direction",
+					"name":"direction",
+					"visible":true
+				}
+			],
+			"txtPos":2,
+			"width":40,
+			"x":0,
+			"y":0
+		},
+		{
+			"classname":"org.ifelse.vl.VLLine",
+			"direct":0,
+			"height":40,
 			"id":"81",
 			"id_from":"66",
 			"id_to":"80",
@@ -741,39 +877,6 @@
 			"id":"62",
 			"id_from":"53",
 			"id_to":"60",
-			"is_run_point":false,
-			"line":true,
-			"mproperties":[
-				{
-					"key":"descript",
-					"name":"descript",
-					"visible":true
-				},
-				{
-					"args":"boolean",
-					"key":"isint",
-					"name":"isint",
-					"visible":true
-				},
-				{
-					"args":"Direction",
-					"key":"direction",
-					"name":"direction",
-					"visible":true
-				}
-			],
-			"txtPos":2,
-			"width":40,
-			"x":0,
-			"y":0
-		},
-		{
-			"classname":"org.ifelse.vl.VLLine",
-			"direct":0,
-			"height":40,
-			"id":"95",
-			"id_from":"91",
-			"id_to":"89",
 			"is_run_point":false,
 			"line":true,
 			"mproperties":[
@@ -1002,48 +1105,48 @@
 		},
 		{
 			"classname":"org.ifelse.vl.VLPoint",
-			"flow_point_id":"400102",
+			"flow_point_id":"100103",
 			"height":40,
-			"id":"140",
+			"id":"145",
 			"is_run_point":false,
 			"line":false,
 			"mproperties":[
 				{
-					"key":"method",
-					"name":"method",
-					"value":"trim",
+					"args":"Event",
+					"key":"event",
+					"name":"Event",
+					"value":"144",
 					"visible":true
 				},
 				{
-					"key":"in",
-					"name":"in",
-					"value":"$en",
+					"key":"params",
+					"name":"params",
+					"value":"$word",
 					"visible":true
 				},
 				{
-					"key":"out",
-					"name":"out",
-					"value":"$entrim",
+					"key":"delay",
+					"name":"delay",
 					"visible":true
 				},
 				{
 					"key":"descript",
 					"name":"descript",
-					"value":"字符处理",
+					"value":"拼写错误",
 					"visible":true
 				}
 			],
 			"width":40,
-			"x":676,
-			"y":89
+			"x":776,
+			"y":556
 		},
 		{
 			"classname":"org.ifelse.vl.VLLine",
 			"direct":0,
 			"height":40,
-			"id":"141",
-			"id_from":"68",
-			"id_to":"140",
+			"id":"146",
+			"id_from":"91",
+			"id_to":"145",
 			"is_run_point":false,
 			"line":true,
 			"mproperties":[
@@ -1074,42 +1177,9 @@
 			"classname":"org.ifelse.vl.VLLine",
 			"direct":0,
 			"height":40,
-			"id":"142",
-			"id_from":"140",
-			"id_to":"72",
-			"is_run_point":false,
-			"line":true,
-			"mproperties":[
-				{
-					"key":"descript",
-					"name":"descript",
-					"visible":true
-				},
-				{
-					"args":"boolean",
-					"key":"isint",
-					"name":"isint",
-					"visible":true
-				},
-				{
-					"args":"Direction",
-					"key":"direction",
-					"name":"direction",
-					"visible":true
-				}
-			],
-			"txtPos":2,
-			"width":40,
-			"x":0,
-			"y":0
-		},
-		{
-			"classname":"org.ifelse.vl.VLLine",
-			"direct":0,
-			"height":40,
-			"id":"143",
-			"id_from":"72",
-			"id_to":"78",
+			"id":"147",
+			"id_from":"145",
+			"id_to":"89",
 			"is_run_point":false,
 			"line":true,
 			"mproperties":[

@@ -55,11 +55,21 @@ public class FormCnToEn extends Form{
 
         switch (event){
 
-            case B_WORD_SPEAKING:
-
+            case B_WORD_SPEAKING: {
                 MWord word = (MWord) value;
                 text_cn.setText(word.cn);
+            }
                 return true;
+            case B_WORD_TEST_SPELLING_ERROR: {
+
+                MWord word = (MWord) value;
+                text_en.setText(word.word);
+
+            }
+
+                return true;
+
+
 
         }
         return false;
@@ -78,7 +88,7 @@ public class FormCnToEn extends Form{
                 setContentView(R.layout.formcntoen);
                 setTitle("单词拼写");
                 break;
-            case FS_STOP:
+            case FS_DESTORY:
                 btn_start.setEnabled(true);
                 btn_start.setText("开始");
                 cancel(Event.B_WORD_TEST_CN_TO_EN);
