@@ -10,6 +10,8 @@ import org.ifelse.vldata.Event;
 public class FormFlash extends Form{
 
 
+    private boolean inited;
+
     @Override
     public boolean onMessage(Event event, Object value) {
 
@@ -40,11 +42,14 @@ public class FormFlash extends Form{
                 break;
 
             case FS_UI_INIT:
-                sendMessage(Event.B_INIT);
+
 
                 break;
             case FS_RESUME:
-
+                if( !inited ) {
+                    sendMessage(Event.B_INIT);
+                    inited = false;
+                }
                 break;
             case FS_PAUSE:
 

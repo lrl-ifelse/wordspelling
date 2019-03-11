@@ -24,9 +24,29 @@ android {
 
     }
 
+    signingConfigs {
+        release {
+            keyAlias 'wordspelling'
+            keyPassword 'wordspelling'
+            storeFile file('wordspelling')
+            storePassword 'wordspelling'
+
+        }
+        debug {
+            keyAlias 'wordspelling'
+            keyPassword 'wordspelling'
+            storeFile file('wordspelling')
+            storePassword 'wordspelling'
+        }
+    }
+
+    flavorDimensions "default"
+
+
     buildTypes {
         release {
             minifyEnabled false
+            signingConfig signingConfigs.release
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
