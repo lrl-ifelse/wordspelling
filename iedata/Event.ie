@@ -35,6 +35,11 @@
 		"descript":"拼写错误"
 	},
 	{
+		"name":"F_CHAR_TRAIN",
+		"id":"158",
+		"descript":"字符训练"
+	},
+	{
 		"name":"F_CODE_EXAMPLE",
 		"id":"99",
 		"descript":"代码示例"

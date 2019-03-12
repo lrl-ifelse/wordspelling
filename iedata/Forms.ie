@@ -6,6 +6,7 @@
 			"flow_point_id":"900101",
 			"height":60,
 			"id":"77",
+			"is_run_point":false,
 			"line":false,
 			"mproperties":[
 				{
@@ -44,6 +45,7 @@
 			"flow_point_id":"900101",
 			"height":60,
 			"id":"1",
+			"is_run_point":false,
 			"line":false,
 			"mproperties":[
 				{
@@ -82,6 +84,7 @@
 			"flow_point_id":"900101",
 			"height":60,
 			"id":"100",
+			"is_run_point":false,
 			"line":false,
 			"mproperties":[
 				{
@@ -120,6 +123,7 @@
 			"flow_point_id":"900101",
 			"height":60,
 			"id":"2",
+			"is_run_point":false,
 			"line":false,
 			"mproperties":[
 				{
@@ -157,7 +161,47 @@
 			"classname":"org.ifelse.vl.VLPoint",
 			"flow_point_id":"900101",
 			"height":60,
+			"id":"157",
+			"is_run_point":false,
+			"line":false,
+			"mproperties":[
+				{
+					"args":"Event",
+					"key":"event",
+					"name":"event",
+					"value":"158",
+					"visible":true
+				},
+				{
+					"key":"classname",
+					"name":"classname",
+					"value":"FormCharTrain",
+					"visible":true
+				},
+				{
+					"args":"Template",
+					"key":"template",
+					"name":"template",
+					"value":"FormBase",
+					"visible":true
+				},
+				{
+					"key":"descript",
+					"name":"descript",
+					"value":"字母训练",
+					"visible":true
+				}
+			],
+			"width":60,
+			"x":433,
+			"y":54
+		},
+		{
+			"classname":"org.ifelse.vl.VLPoint",
+			"flow_point_id":"900101",
+			"height":60,
 			"id":"6",
+			"is_run_point":false,
 			"line":false,
 			"mproperties":[
 				{
@@ -198,6 +242,7 @@
 			"id":"102",
 			"id_from":"6",
 			"id_to":"2",
+			"is_run_point":false,
 			"line":true,
 			"mproperties":[
 				{
@@ -230,6 +275,7 @@
 			"id":"103",
 			"id_from":"2",
 			"id_to":"1",
+			"is_run_point":false,
 			"line":true,
 			"mproperties":[
 				{
@@ -262,6 +308,7 @@
 			"id":"104",
 			"id_from":"2",
 			"id_to":"77",
+			"is_run_point":false,
 			"line":true,
 			"mproperties":[
 				{

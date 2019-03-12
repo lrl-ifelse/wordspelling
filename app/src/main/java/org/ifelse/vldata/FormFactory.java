@@ -13,6 +13,7 @@ public class FormFactory{
            case F_ORDER : return FormOrder.class;//顺序朗读
            case F_CODE_EXAMPLE : return FormCode.class;//示例代码
            case F_MAIN : return FormMain.class;//首页
+           case F_CHAR_TRAIN : return FormCharTrain.class;//字母训练
            case F_FLASH : return FormFlash.class;//引导页
 
         }

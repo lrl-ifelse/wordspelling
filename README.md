@@ -5,7 +5,7 @@
 
 [插件地址](https://github.com/fclassroom/ifelse)
 
-[单词拼写apk](./wordspelling.apk)
+[单词拼读apk](./wordspelling.apk)
 
 ## 目录结构
 

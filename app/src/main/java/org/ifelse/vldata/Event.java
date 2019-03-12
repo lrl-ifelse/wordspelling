@@ -12,6 +12,7 @@ public enum Event{
     B_WORD_TEST_CN_TO_EN,//汉子拼单词
     B_WORD_TEST_EN_TO_CN,//英译汗
     B_WORD_TEST_SPELLING_ERROR,//拼写错误
+    F_CHAR_TRAIN,//字符训练
     F_CODE_EXAMPLE,//代码示例
     F_FLASH,//启动页
     F_MAIN,//主页面
@@ -32,6 +33,7 @@ public enum Event{
             case 49 : return Event.B_WORD_TEST_CN_TO_EN;
             case 97 : return Event.B_WORD_TEST_EN_TO_CN;
             case 144 : return Event.B_WORD_TEST_SPELLING_ERROR;
+            case 158 : return Event.F_CHAR_TRAIN;
             case 99 : return Event.F_CODE_EXAMPLE;
             case 5 : return Event.F_FLASH;
             case 1 : return Event.F_MAIN;

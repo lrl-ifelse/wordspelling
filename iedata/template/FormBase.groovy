@@ -13,11 +13,17 @@ class FormBase{
     void run(Map binding){
 
         String path = project.getBasePath()+"/iedata/template/form.tpl";
+        String path_layout = project.getBasePath()+"/iedata/template/layout.tpl";
+
         def tpl = new File(path);
         def engine = new groovy.text.GStringTemplateEngine();
         def template = engine.createTemplate(tpl).make(binding);
 
         def classname = binding.get("classname");
+
+        String layout_file = project.getBasePath()+"/app/src/main/res/layout/"+classname.toLowerCase()+".xml";
+
+
 
         String dir = project.getBasePath()+"/app/src/main/java/org/ifelse/vldata/forms/";
         String javapath = dir +classname+".java";
@@ -30,24 +36,25 @@ class FormBase{
 
         if (!file.exists()) {
 
-            def printWriter = file.newPrintWriter() //
-            printWriter.write(template.toString())
-            printWriter.flush()
-            printWriter.close()
+            FileUtil.copy(path_layout,layout_file);
+            FileUtil.save(template.toString(),javapath);
 
             log("   " + javapath);
+            log("   " + layout_file);
 
+            String manifest = project.getBasePath()+"/app/src/main/AndroidManifest.xml";
 
-            log("");
+            StringBuffer strs = new StringBuffer();
+            strs.append( "\t\t<activity\n");
+            strs.append( "\t\t android:name=\"org.ifelse.vldata.forms."+classname+"\"\n");
+            strs.append( "\t\t android:configChanges=\"keyboard|keyboardHidden|orientation|locale|screenSize\"\n");
+            strs.append( "\t\t android:launchMode=\"singleTask\"\n");
+            strs.append( "\t\t android:screenOrientation=\"portrait\" \n");
+            strs.append( "\t\t >\n");
+            strs.append( "\t\t</activity>\n");
 
-            log( '<activity')
-            log( 'android:name="org.ifelse.vldata.forms.'+classname+'"')
-            log( 'android:configChanges="keyboard|keyboardHidden|orientation|locale|screenSize"')
-            log( 'android:launchMode="singleTask"')
-            log( 'android:screenOrientation="portrait"')
-            log( '/>')
+            FileUtil.addActivity(manifest,strs);
 
-            log("");
             
         }
         else {

@@ -41,7 +41,7 @@ public class $classname extends Form{
 
             case FS_CREATE:
 
-                setContentView(R.layout.);
+                setContentView(R.layout.<%out.print(classname.toLowerCase())%>);
 
                 break;
         }
