@@ -77,20 +77,6 @@ public class JKApp extends MultiDexApplication {
             }
         });
 
-        mainHandler = new Handler() {
-            /*
-             * @param msg
-             */
-            @Override
-            public void handleMessage(Message msg) {
-                super.handleMessage(msg);
-                if (msg.obj != null) {
-                    print(msg.obj.toString());
-                }
-            }
-
-        };
-
 
         initAsr();
 
@@ -99,7 +85,6 @@ public class JKApp extends MultiDexApplication {
     }
 
 
-    protected Handler mainHandler;
     String appId = "15604141";
 
     String appKey = "7ShPcm9UvsKLE7KeUXcW31h5";
@@ -107,7 +92,7 @@ public class JKApp extends MultiDexApplication {
     String secretKey = "AhQnYjwtG301FGcjXAMDzz3FndqlXMoL";
 
     // TtsMode.MIX; 离在线融合，在线优先； TtsMode.ONLINE 纯在线； 没有纯离线
-    TtsMode ttsMode = TtsMode.ONLINE;
+    TtsMode ttsMode = TtsMode.MIX;
     String TEMP_DIR = "/sdcard/baiduTTS";
     final String TEXT_FILENAME = TEMP_DIR + "/" + "bd_etts_text.dat";
     final String MODEL_FILENAME =
@@ -116,8 +101,9 @@ public class JKApp extends MultiDexApplication {
 
 
     public boolean initTTs() {
+
         LoggerProxy.printable(true); // 日志打印在logcat中
-        boolean isMix = ttsMode.equals(TtsMode.MIX);
+        boolean isMix = ttsMode.equals(TtsMode.ONLINE);
         boolean isSuccess;
         if (isMix) {
             // 检查2个离线资源是否可读
@@ -128,17 +114,12 @@ public class JKApp extends MultiDexApplication {
                 print("离线资源存在并且可读, 目录：" + TEMP_DIR);
             }
         }
-        // 日志更新在UI中，可以换成MessageListener，在logcat中查看日志
-        SpeechSynthesizerListener listener = new UiMessageListener(mainHandler);
 
         // 1. 获取实例
         mSpeechSynthesizer = SpeechSynthesizer.getInstance();
         mSpeechSynthesizer.setContext(this);
 
-        // 2. 设置listener
-        mSpeechSynthesizer.setSpeechSynthesizerListener(listener);
-
-        // 3. 设置appId，appKey.secretKey
+         // 3. 设置appId，appKey.secretKey
         int result = mSpeechSynthesizer.setAppId(appId);
         checkResult(result, "setAppId");
         result = mSpeechSynthesizer.setApiKey(appKey, secretKey);
@@ -184,7 +165,7 @@ public class JKApp extends MultiDexApplication {
             params.put(SpeechSynthesizer.PARAM_TTS_TEXT_MODEL_FILE, TEXT_FILENAME);
             params.put(SpeechSynthesizer.PARAM_TTS_SPEECH_MODEL_FILE, MODEL_FILENAME);
         }
-        InitConfig initConfig =  new InitConfig(appId, appKey, secretKey, ttsMode, params, listener);
+        InitConfig initConfig =  new InitConfig(appId, appKey, secretKey, ttsMode, params, null);
         AutoCheck.getInstance(getApplicationContext()).check(initConfig, new Handler(Looper.getMainLooper()) {
             @Override
             /**
@@ -207,7 +188,11 @@ public class JKApp extends MultiDexApplication {
         result = mSpeechSynthesizer.initTts(ttsMode);
         checkResult(result, "initTts");
 
-        return ( result == 0 );
+        print("init result:"+result);
+
+
+
+        return ( result == 0 || result == -204 );
 
     }
 

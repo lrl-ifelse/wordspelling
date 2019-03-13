@@ -2,9 +2,15 @@ package org.ifelse.points;
 
 import com.baidu.tts.client.SpeechError;
 import com.baidu.tts.client.SpeechSynthesizerListener;
+
+import org.ifelse.utils.FileUtil;
 import org.ifelse.wordspelling.JKApp;
 import org.ifelse.vl.FlowBox;
 import org.ifelse.vl.FlowPoint;
+
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
 
 public class TTS extends FlowPoint {
     @Override
@@ -18,8 +24,17 @@ public class TTS extends FlowPoint {
        flowBox.log("TTS:%s",txt);
 
         JKApp.instance.mSpeechSynthesizer.setSpeechSynthesizerListener(new SpeechSynthesizerListener() {
+
+            FileOutputStream fileOutputStream = null;
+
             @Override
             public void onSynthesizeStart(String s) {
+
+//                try {
+//                    fileOutputStream = new FileOutputStream("/sdcard/a.mp3");
+//                } catch (FileNotFoundException e) {
+//                    e.printStackTrace();
+//                }
 
                 flowBox.log("tts onSynthesizeStart:%s",s );
             }
@@ -27,10 +42,30 @@ public class TTS extends FlowPoint {
             @Override
             public void onSynthesizeDataArrived(String s, byte[] bytes, int i) {
 
+//                flowBox.log("tts onSynthesizeDataArrived:%s",s );
+//
+//
+//                try {
+//                    fileOutputStream.write(bytes);
+//                    fileOutputStream.flush();
+//                } catch (Exception e) {
+//                    e.printStackTrace();
+//                }
+
+
+
             }
 
             @Override
             public void onSynthesizeFinish(String s) {
+
+
+//                flowBox.log("tts onSynthesizeFinish:%s",s );
+//                try {
+//                    fileOutputStream.close();
+//                } catch (IOException e) {
+//                    e.printStackTrace();
+//                }
 
             }
 
