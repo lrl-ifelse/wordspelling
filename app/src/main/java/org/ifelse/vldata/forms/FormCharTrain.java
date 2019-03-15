@@ -1,0 +1,51 @@
+package org.ifelse.vldata.forms;
+
+import android.view.View;
+import org.ifelse.wordspelling.R;
+import org.ifelse.vl.Form;
+import org.ifelse.vldata.Event;
+
+/*
+字母训练
+*/
+public class FormCharTrain extends Form{
+
+
+    @Override
+    public void onClick(View view){
+
+        switch (view.getId()){
+
+
+        }
+    }
+
+
+    @Override
+    public boolean onMessage(Event event, Object value) {
+
+        switch (event){
+
+
+        }
+        return false;
+
+    }
+
+    @Override
+    public void onStateChanged(FormState fs, Object value) {
+
+        //log("%-12s taskid:%d taskroot:%b", fs, getTaskId(), isTaskRoot());
+
+        switch (fs) {
+
+            case FS_CREATE:
+
+                setContentView(R.layout.formchartrain);
+
+                break;
+        }
+    }
+
+
+}
