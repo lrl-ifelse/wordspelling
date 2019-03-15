@@ -18,13 +18,13 @@
 				{
 					"key":"result",
 					"name":"result",
-					"value":"$storage",
+					"value":"$storage_permision",
 					"visible":true
 				},
 				{
 					"key":"descript",
 					"name":"descript",
-					"value":"权限判断",
+					"value":"Permission judge",
 					"visible":true
 				}
 			],
@@ -50,7 +50,7 @@
 				{
 					"key":"descript",
 					"name":"descript",
-					"value":"朗读-初始化成功",
+					"value":"tts init words ok",
 					"visible":true
 				}
 			],
@@ -86,13 +86,13 @@
 				{
 					"key":"descript",
 					"name":"descript",
-					"value":"初始化成功",
+					"value":"send event init ok",
 					"visible":true
 				}
 			],
 			"width":40,
-			"x":568,
-			"y":360
+			"x":559,
+			"y":353
 		},
 		{
 			"classname":"org.ifelse.vl.VLPoint",
@@ -111,7 +111,7 @@
 				{
 					"key":"descript",
 					"name":"descript",
-					"value":"权限请求弹窗",
+					"value":"Permission Alert",
 					"visible":true
 				}
 			],
@@ -142,7 +142,7 @@
 				{
 					"key":"descript",
 					"name":"descript",
-					"value":"起始点",
+					"value":"Start",
 					"visible":true
 				}
 			],
@@ -161,7 +161,7 @@
 				{
 					"key":"descript",
 					"name":"descript",
-					"value":"重新判断",
+					"value":"judge again",
 					"visible":true
 				}
 			],
@@ -180,13 +180,13 @@
 				{
 					"key":"result",
 					"name":"result",
-					"value":"$init_baidu_result",
+					"value":"$init_tts_result",
 					"visible":true
 				},
 				{
 					"key":"descript",
 					"name":"descript",
-					"value":"百度语音初始化",
+					"value":"tts init",
 					"visible":true
 				}
 			],
@@ -223,7 +223,7 @@
 				{
 					"key":"descript",
 					"name":"descript",
-					"value":"本地数据",
+					"value":"local data",
 					"visible":true
 				}
 			],
@@ -242,13 +242,13 @@
 				{
 					"key":"descript",
 					"name":"descript",
-					"value":"数据始化失败",
+					"value":"data init error",
 					"visible":true
 				}
 			],
 			"width":40,
-			"x":383,
-			"y":137
+			"x":384,
+			"y":135
 		},
 		{
 			"classname":"org.ifelse.vl.VLPoint",
@@ -273,13 +273,13 @@
 				{
 					"key":"descript",
 					"name":"descript",
-					"value":"保存数据",
+					"value":"save local data",
 					"visible":true
 				}
 			],
 			"width":40,
-			"x":569,
-			"y":249
+			"x":566,
+			"y":255
 		},
 		{
 			"classname":"org.ifelse.vl.VLPoint",
@@ -299,7 +299,7 @@
 				{
 					"key":"descript",
 					"name":"descript",
-					"value":"朗读-初始化提示",
+					"value":"tts init successfully",
 					"visible":true
 				}
 			],
@@ -324,7 +324,7 @@
 				{
 					"key":"descript",
 					"name":"descript",
-					"value":"单词导入",
+					"value":" init words",
 					"visible":true
 				}
 			],
@@ -681,7 +681,7 @@
 				{
 					"key":"descript",
 					"name":"descript",
-					"value":"$storage",
+					"value":"$storage_permision",
 					"visible":true
 				},
 				{
@@ -781,7 +781,7 @@
 				{
 					"key":"descript",
 					"name":"descript",
-					"value":"$init_baidu_result",
+					"value":"$init_tts_result",
 					"visible":true
 				},
 				{
@@ -803,5 +803,5 @@
 			"y":0
 		}
 	],
-	"title":"系统初始化"
+	"title":"app init"
 }

@@ -8,6 +8,7 @@ import org.ifelse.vl.*;
 import org.ifelse.utils.*;
 import org.ifelse.model.*;
 import com.alibaba.fastjson.JSON;
+import com.alibaba.fastjson.serializer.SerializerFeature;
 
 class R {
 
@@ -105,7 +106,7 @@ class R {
 
             mDoc.addItem(point);
             String json =  JSON.toJSONString(mDoc, SerializerFeature.PrettyFormat);
-            FileUtil.save(ljson,path);
+            FileUtil.save(json,path);
 
 
         }
@@ -195,6 +196,21 @@ class R {
 
 
 
+    void action_hello(){
+
+        GUI.println(project,"可配置菜单 menu.json");
+        GUI.openUrl("https://github.com/fclassroom/ifelse");
+
+    }
+
+    void action_open(){
+
+
+        Process p =  Runtime.getRuntime().exec("open "+project.getBasePath());
+        p.destroy();
+
+
+    }
 
 
 }

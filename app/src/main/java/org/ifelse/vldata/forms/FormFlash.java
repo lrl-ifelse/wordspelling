@@ -20,7 +20,7 @@ public class FormFlash extends Form{
             case B_INIT_SUCCESS:
                 setDestoryOnPause(true);
                 sendMessage(Event.F_MAIN,null);
-                break;
+                return true;
 
         }
 

@@ -29,39 +29,20 @@
     项目实现了初始化、读单词、考单词 三个功能
     页面中只有简单交互逻辑、大部分逻辑包含在流程中。
 
-    例如：
-    FormFlash.sendMessage(Event.B_INIT);
-    调用了包括权限判断、单词导入、语音提示等功能，整个逻辑清晰可见，没有业务逻辑代码。
+[使用介绍](https://github.com/fclassroom/ifelse/blob/master/README_CN.md)
 
-![avatar](./images/flow_init.jpg)
+```
+Copyright 1999-2019 fclassroom Group.
 
-## 流程绘制
-    如何绘制一个流程
-    在流程管理界面 
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at following link.
 
-## log 流程执行输出了统一格式的内容
+     http://www.apache.org/licenses/LICENSE-2.0
 
-    W/系统初始化-225921130: point(5)[0] 起始点 :Start
-    W/系统初始化-225921130: Start params:null
-    W/系统初始化-225921130: point(11)[1] 权限判断 :PermUtil
-    W/系统初始化-225921130: point(27)[2] 百度语音初始化 :TTSInit
-    W/系统初始化-225921130: [$init_baidu_result] is OK :true
-    W/系统初始化-225921130: point(8)[3] 朗读-初始化提示 :TTS
-    W/系统初始化-225921130: tts onSynthesizeStart:0
-    W/系统初始化-225921130: tts onSpeechFinish:0
-    W/系统初始化-225921130: point(38)[4] 本地数据 :UserData
-    W/系统初始化-225921130: [$inited] is OK :false
-    W/系统初始化-225921130: point(32)[5] 单词导入 :BWordImport
-    W/系统初始化-225921130: [$init_word] is OK :true
-    W/系统初始化-225921130: point(39)[6] 保存数据 :UserSaveData
-    W/系统初始化-225921130: point(34)[7] 朗读-初始化成功 :TTS
-    W/系统初始化-225921130: tts onSynthesizeStart:0
-    W/系统初始化-225921130: tts onSpeechFinish:0
-    W/系统初始化-225921130: point(45)[8] 初始化成功 :EventSend
-    W/系统初始化-225921130: Event:B_INIT_SUCCESS
-    W/系统初始化-225921130: flow is over. duration:7784
-
-
-    拷贝 log 后 选择对应流程 ctrl + i 导入log
-    显示执行顺序加快调试时间
-![avatar](./images/flow_log.jpg)
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+```
