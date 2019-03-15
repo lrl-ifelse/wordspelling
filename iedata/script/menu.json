@@ -1,0 +1,16 @@
+{
+  "title": "自定义菜单，根据模版执行",
+  "menus":
+  [
+    {
+      "title": "可配置菜单 menu.json",
+      "action": "R.action_hello"
+    },
+    {
+      "title": "open",
+      "action": "R.action_open"
+    }
+  ]
+
+
+}
